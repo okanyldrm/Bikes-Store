@@ -1467,6 +1467,32 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "BikeStore.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.7"
+        },
+        "compile": {
+          "bin/placeholder/BikeStore.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BikeStore.Core.dll": {}
+        }
+      },
+      "BikeStore.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "BikeStore.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BikeStore.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BikeStore.Entities.dll": {}
+        }
       }
     }
   },
@@ -5642,10 +5668,22 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "BikeStore.Core/1.0.0": {
+      "type": "project",
+      "path": "../BikeStore.Core/BikeStore.Core.csproj",
+      "msbuildProject": "../BikeStore.Core/BikeStore.Core.csproj"
+    },
+    "BikeStore.Entities/1.0.0": {
+      "type": "project",
+      "path": "../BikeStore.Entities/BikeStore.Entities.csproj",
+      "msbuildProject": "../BikeStore.Entities/BikeStore.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "BikeStore.Core >= 1.0.0",
+      "BikeStore.Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.7"
     ]
@@ -5675,7 +5713,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj": {
+              "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj"
+            },
+            "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj": {
+              "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

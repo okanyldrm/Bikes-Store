@@ -4,14 +4,14 @@
     "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {
+    "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
-        "projectName": "BikeStore.DataAccess",
-        "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj",
+        "projectName": "BikeStore.Core",
+        "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj",
         "packagesPath": "C:\\Users\\OkanY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OkanY\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,12 +41,133 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
+        "projectName": "BikeStore.DataAccess",
+        "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\OkanY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\OkanY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj": {
+                "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj"
+              },
+              "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj": {
+                "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.7, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj",
+        "projectName": "BikeStore.Entities",
+        "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj",
+        "packagesPath": "C:\\Users\\OkanY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\OkanY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj": {
+                "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
           "imports": [
             "net461",
             "net462",
