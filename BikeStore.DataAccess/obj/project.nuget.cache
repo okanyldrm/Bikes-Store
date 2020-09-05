@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HGGM4q8Ydqv9vxLzr9HSGSgjMf4XXWTJRp0E3Jw6YXEIjLjZl5u0854cxxI9o9sLAqFMstv6Laa+IqhE/pNksA==",
+  "dgSpecHash": "8qlemT1YDl21NJIRxfwYwjzndkRkDlJlP9mPgk8GN5ZEFK+GvLmUz01MQDwA1WL6VFVHMNMMZpy7e1Puiesdqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -101,7 +101,8 @@
     "C:\\Users\\OkanY\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\OkanY\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\OkanY\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\OkanY\\.nuget\\packages\\visioforge.dotnet.core.trial\\12.0.68\\visioforge.dotnet.core.trial.12.0.68.nupkg.sha512"
   ],
   "logs": []
 }

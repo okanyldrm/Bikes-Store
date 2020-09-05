@@ -34,7 +34,7 @@ namespace BikeStore.Business.Concrete.Managers
 
         public Category GetById(int categoryId)
         {
-            return _categoryDal.Get(c => c.CategoryId == categoryId);
+            return _categoryDal.Get(c => c.category_id == categoryId);
         }
 
         public void Update(Category category)

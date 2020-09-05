@@ -1,0 +1,12 @@
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\bin\Debug\netcoreapp3.1\BikeStore.Entities.deps.json
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\bin\Debug\netcoreapp3.1\BikeStore.Entities.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\bin\Debug\netcoreapp3.1\BikeStore.Entities.pdb
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\bin\Debug\netcoreapp3.1\BikeStore.Core.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\bin\Debug\netcoreapp3.1\BikeStore.Core.pdb
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\obj\Debug\netcoreapp3.1\BikeStore.Entities.csprojAssemblyReference.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\obj\Debug\netcoreapp3.1\BikeStore.Entities.csproj.CoreCompileInputs.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\obj\Debug\netcoreapp3.1\BikeStore.Entities.AssemblyInfoInputs.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\obj\Debug\netcoreapp3.1\BikeStore.Entities.AssemblyInfo.cs
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\obj\Debug\netcoreapp3.1\BikeStore.Entities.csproj.CopyComplete
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\obj\Debug\netcoreapp3.1\BikeStore.Entities.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Entities\obj\Debug\netcoreapp3.1\BikeStore.Entities.pdb

@@ -4,6 +4,7 @@ using BikeStore.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using BikeStore.Entities.ComplexType;
 
 namespace BikeStore.Business.Concrete.Managers
 {
@@ -28,6 +29,16 @@ namespace BikeStore.Business.Concrete.Managers
             _productDal.Delete(product);
         }
 
+        public List<ProductDetail> GetProductDetails()
+        {
+            return _productDal.GetProductDetails();
+        }
+
+        public List<Product> MaxPriceProduct()
+        {
+            return _productDal.GetMaxPriceProduct();
+        }
+
         public List<Product> GetAll()
         {
             return _productDal.GetList();
@@ -35,12 +46,14 @@ namespace BikeStore.Business.Concrete.Managers
 
         public Product GetById(int productId)
         {
-            return _productDal.Get(p => p.ProductId == productId);
+            return _productDal.Get(p => p.product_id == productId);
         }
 
         public void Update(Product product)
         {
             _productDal.Update(product);
         }
+
+        
     }
 }

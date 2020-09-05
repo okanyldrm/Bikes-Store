@@ -1468,6 +1468,27 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "VisioForge.DotNet.Core.TRIAL/12.0.68": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/VisioForge.Controls.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.Controls.UI.Dialogs.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.Controls.UI.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.MediaFramework.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.Shared.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.Tools.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.Types.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/VisioForge.Controls.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.Controls.UI.Dialogs.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.Controls.UI.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.MediaFramework.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.Shared.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.Tools.NetCore.dll": {},
+          "lib/netcoreapp3.1/VisioForge.Types.NetCore.dll": {}
+        }
+      },
       "BikeStore.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -1488,7 +1509,8 @@
           "BikeStore.Core": "1.0.0",
           "BikeStore.Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.7",
-          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.7"
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.7",
+          "VisioForge.DotNet.Core.TRIAL": "12.0.68"
         },
         "compile": {
           "bin/placeholder/BikeStore.DataAccess.dll": {}
@@ -5683,6 +5705,32 @@
         "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll",
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
+      ]
+    },
+    "VisioForge.DotNet.Core.TRIAL/12.0.68": {
+      "sha512": "si1UVNV2s1wXQfAZ6WcaPyXLWe+9uhgQyVVwz0sm4uJns4XVTyYtiM8DHwLa8xrABGNsjEQQjwOB8M691R7EPA==",
+      "type": "package",
+      "path": "visioforge.dotnet.core.trial/12.0.68",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/VisioForge.Controls.UI.Dialogs.dll",
+        "lib/net45/VisioForge.Controls.UI.dll",
+        "lib/net45/VisioForge.Controls.dll",
+        "lib/net45/VisioForge.MediaFramework.dll",
+        "lib/net45/VisioForge.Shared.dll",
+        "lib/net45/VisioForge.Tools.dll",
+        "lib/net45/VisioForge.Types.dll",
+        "lib/netcoreapp3.1/VisioForge.Controls.NetCore.dll",
+        "lib/netcoreapp3.1/VisioForge.Controls.UI.Dialogs.NetCore.dll",
+        "lib/netcoreapp3.1/VisioForge.Controls.UI.NetCore.dll",
+        "lib/netcoreapp3.1/VisioForge.MediaFramework.NetCore.dll",
+        "lib/netcoreapp3.1/VisioForge.Shared.NetCore.dll",
+        "lib/netcoreapp3.1/VisioForge.Tools.NetCore.dll",
+        "lib/netcoreapp3.1/VisioForge.Types.NetCore.dll",
+        "readme.txt",
+        "visioforge.dotnet.core.trial.12.0.68.nupkg.sha512",
+        "visioforge.dotnet.core.trial.nuspec"
       ]
     },
     "BikeStore.Core/1.0.0": {

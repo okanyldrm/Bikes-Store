@@ -35,7 +35,7 @@ namespace BikeStore.Business.Concrete.Managers
 
         public Stock GetById(int storeId)
         {
-            return _stockDal.Get(s => s.StoreId == storeId);
+            return _stockDal.Get(s => s.store_id == storeId);
         }
 
         public void Update(Stock stock)

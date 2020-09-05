@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BikeStore.DataAccess\BikeStore.DataAccess.csproj" />
+    <ProjectReference Include="..\BikeStore.Entities\BikeStore.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -12,7 +12,7 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
         //Connection-String
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(local)\mssqllocaldb;Datebase=BikeStores;Trusted_Connection=Ture");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb; Database=BikeStores; Trusted_Connection=True");
         }
 
 
@@ -22,7 +22,6 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
         public DbSet<Product> Products { get; set; }
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<Customer> Customers { get; set; }
-        public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Staff> Staffs { get; set; }
         public DbSet<Store> Stores { get; set; }

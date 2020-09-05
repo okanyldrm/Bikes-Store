@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using BikeStore.Entities.ComplexType;
 
 namespace BikeStore.Business.Abstract
 {
@@ -14,7 +15,8 @@ namespace BikeStore.Business.Abstract
         void Add(Product product);
         void Update(Product product);
         void Delete(Product product);
-
+        List<ProductDetail> GetProductDetails();
+        List<Product> MaxPriceProduct();
 
 
     }
