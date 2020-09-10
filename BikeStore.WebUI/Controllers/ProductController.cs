@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using BikeStore.Business.Abstract;
 using BikeStore.Entities.ComplexType;
 using BikeStore.Entities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace BikeStore.WebUI.Controllers
 {
 
+    [Authorize]
    
     public class ProductController : Controller
     {

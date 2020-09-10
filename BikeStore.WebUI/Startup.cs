@@ -6,8 +6,11 @@ using BikeStore.Business.Abstract;
 using BikeStore.Business.Concrete.Managers;
 using BikeStore.DataAccess.Abstract;
 using BikeStore.DataAccess.Concrete.EntityFramework;
+using BikeStore.WebUI.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,6 +32,9 @@ namespace BikeStore.WebUI
             services.AddControllersWithViews();
             services.AddScoped<IProductDal, EfProductDal>();
             services.AddScoped<IProductService, ProductManager>();
+            services.AddDbContext<CustomIdentityDbContext>
+                (options => options.UseSqlServer("Server=(localdb)\\mssqllocaldb; Database=BikeStores; Trusted_Connection=True"));
+            services.AddIdentity<CustomIdentityUser, CustomIdentityRole>().AddEntityFrameworkStores<CustomIdentityDbContext>().AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +54,7 @@ namespace BikeStore.WebUI
 
             app.UseAuthorization();
 
+          
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
