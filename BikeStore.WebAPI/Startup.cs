@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BikeStore.Business.Abstract;
+using BikeStore.Business.Concrete.Managers;
+using BikeStore.DataAccess.Abstract;
+using BikeStore.DataAccess.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -25,6 +29,8 @@ namespace BikeStore.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<IProductDal, EfProductDal>();
+            services.AddScoped<IProductService, ProductManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +48,13 @@ namespace BikeStore.WebAPI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+
+
+                //endpoints.MapControllerRoute(
+                //name: "default",
+                //pattern: "api/{controller}/{action}");
+
+
             });
         }
     }
