@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BikeStore.Business.Abstract;
+using BikeStore.Entities.ComplexType;
+using BikeStore.Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BikeStore.WebAPI.Controllers
@@ -45,6 +47,18 @@ namespace BikeStore.WebAPI.Controllers
 
             return Json(Product);
         }
+
+        [HttpGet("productdetail")]
+        public IActionResult GetProductDetail()
+        {
+
+            List<ProductDetail> productDetails = _productService.GetProductDetails();
+
+            return Json(productDetails);
+
+
+        }
+
 
     }
 }
