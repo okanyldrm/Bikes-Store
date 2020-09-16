@@ -40,5 +40,13 @@ namespace BikeStore.WebAPI.Controllers
 
         }
 
+        [HttpGet("getbyid/{id}")]
+        public IActionResult GetById(int id)
+        {
+            var Product = _productService.GetById(id);
+
+            return Json(Product);
+        }
+
     }
 }
