@@ -31,6 +31,8 @@ namespace BikeStore.WebAPI
             services.AddControllers();
             services.AddScoped<IProductDal, EfProductDal>();
             services.AddScoped<IProductService, ProductManager>();
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<ICategoryDal, EfCategoryDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

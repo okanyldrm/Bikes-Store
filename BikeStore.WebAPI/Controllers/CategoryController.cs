@@ -9,42 +9,36 @@ namespace BikeStore.WebAPI.Controllers
 {
 
     [Route("api/[controller]")]
-    public class ProductController : Controller
+    public class CategoryController : Controller
     {
+        private ICategoryService _categoryService;
 
-
-
-        private IProductService _productService;
-
-        public ProductController(IProductService productService)
+        public CategoryController(ICategoryService categoryService)
         {
-            _productService = productService;
+            _categoryService = categoryService;
         }
-
-
-
-
-
-        [HttpGet("GetAll")]
+        [HttpGet("getall")]
         public IActionResult GetAll()
         {
+            var Categories = _categoryService.GetAll();
 
-            var Products = _productService.GetAll();
-            ProductViewListModel model = new ProductViewListModel()
+            var model = new CategoryViewListModel()
             {
-                Products = Products
+                Categories = Categories
             };
+
             return Json(model);
 
         }
 
+
         [HttpGet("getbyid/{id}")]
         public IActionResult GetById(int id)
         {
-            var Product = _productService.GetById(id);
-
-            return Json(Product);
+            var Category = _categoryService.GetById(id);
+            return Json(Category);
         }
+
 
     }
 }
