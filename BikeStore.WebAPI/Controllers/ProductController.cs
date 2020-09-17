@@ -55,10 +55,15 @@ namespace BikeStore.WebAPI.Controllers
             List<ProductDetail> productDetails = _productService.GetProductDetails();
 
             return Json(productDetails);
-
-
         }
 
+        
+        [HttpGet("ProductGetByCategoryId/{categoryId}")]
+        public IActionResult ProductGetByCategoryId(int categoryId)
+        {
+            List<Product> products = _productService.GetByCategories(categoryId);
+            return Json(products);
+        }
 
     }
 }
