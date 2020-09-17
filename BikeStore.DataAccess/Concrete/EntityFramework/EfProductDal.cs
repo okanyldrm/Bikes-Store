@@ -49,6 +49,16 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
                 return result;
             }
         }
+
+        public List<Product> GetByCategory(int categoryId)
+        {
+            using (BikeStoreContext context = new BikeStoreContext())
+            {
+                string query = "Select * From products where products.category_id = " + categoryId;
+                var result = context.Products.FromSqlRaw(query).ToList();
+                return result;
+            }
+        }
     }
 }
 

@@ -169,3 +169,4 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\Bi
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\ChildrenBicycles.cshtml.g.cs

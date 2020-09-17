@@ -17,7 +17,7 @@ namespace BikeStore.Business.Abstract
         void Delete(Product product);
         List<ProductDetail> GetProductDetails();
         List<Product> MaxPriceProduct();
-
+        List<Product> GetByCategories(int categoryId);
 
     }
 }

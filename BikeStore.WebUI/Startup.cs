@@ -32,6 +32,8 @@ namespace BikeStore.WebUI
             services.AddControllersWithViews();
             services.AddScoped<IProductDal, EfProductDal>();
             services.AddScoped<IProductService, ProductManager>();
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<ICategoryDal, EfCategoryDal>();
             services.AddDbContext<CustomIdentityDbContext>
                 (options => options.UseSqlServer("Server=(localdb)\\mssqllocaldb; Database=BikeStores; Trusted_Connection=True"));
             services.AddIdentity<CustomIdentityUser, CustomIdentityRole>().AddEntityFrameworkStores<CustomIdentityDbContext>().AddDefaultTokenProviders();

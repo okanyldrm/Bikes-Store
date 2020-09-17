@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BikeStore.WebUI.Controllers
 {
 
-    [Authorize]
+   
    
     public class ProductController : Controller
     {

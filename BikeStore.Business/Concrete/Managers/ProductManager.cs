@@ -39,6 +39,12 @@ namespace BikeStore.Business.Concrete.Managers
             return _productDal.GetMaxPriceProduct();
         }
 
+        public List<Product> GetByCategories(int categoryId)
+        {
+            return _productDal.GetByCategory(categoryId);
+        }
+
+
         public List<Product> GetAll()
         {
             return _productDal.GetList();
