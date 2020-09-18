@@ -32,7 +32,7 @@ namespace BikeStore.Business.Concrete.Managers
 
         public Brand GetById(int brandId)
         {
-            return _branddal.Get(b => b.BrandId == brandId);
+            return _branddal.Get(b => b.brand_id == brandId);
         }
 
         public void update(Brand brand)

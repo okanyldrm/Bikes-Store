@@ -24,6 +24,7 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
                         from p in context.Products
                         join c in context.Categories on p.category_id equals c.category_id
                         join s in context.Stocks on p.product_id equals s.product_id
+                        join b in context.Brands on p.brand_id equals b.brand_id
 
                         select new ProductDetail
                         {
@@ -31,7 +32,8 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
                             ProductName = p.product_name,
                             CategoryName = c.category_name,
                             Quantity = s.quantity,
-                            Price = p.list_price
+                            Price = p.list_price,
+                            BrandName = b.brand_name
                         };
                 return result.ToList();
             }
@@ -44,7 +46,7 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
             using (BikeStoreContext context = new BikeStoreContext())
             {
                 var result = context.Products.FromSqlRaw(
-                        "Select * from products where products.list_price = ( Select MAX(products.list_price) from products  ) ")
+                        "Select * from products where products.list_price = ( Select MAX(products.list_price) from products)")
                     .ToList();
                 return result;
             }

@@ -1,6 +1,7 @@
 ﻿using BikeStore.Core.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace BikeStore.Entities.Concrete
@@ -8,9 +9,10 @@ namespace BikeStore.Entities.Concrete
     public class Brand : IEntity
     {
 
-        public int BrandId { get; set; }
+        [Key]
+        public int brand_id { get; set; }
 
-        public string BrandName { get; set; }
+        public string brand_name { get; set; }
 
 
     }
