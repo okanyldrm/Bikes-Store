@@ -5,59 +5,319 @@
 }
 
 @*<div class="row">
-    <div class="col-md-3">
-        <ul class="list-group">
-
-           
-            <a asp-controller="Product" asp-action="GetAllProductView">    <li class="list-group-item list-group-item-primary">Productsssss</li>  </a>
-           
-            <li class="list-group-item list-group-item-success">A simple success list group item</li>
-            <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
-            <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
-            <li class="list-group-item list-group-item-info">A simple info list group item</li>
-            <li class="list-group-item list-group-item-light">A simple light list group item</li>
-            <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
-        </ul>
+        <div class="col-md-3">
+            <ul class="list-group">
 
 
-        
-        
-        
+                <a asp-controller="Product" asp-action="GetAllProductView">    <li class="list-group-item list-group-item-primary">Productsssss</li>  </a>
 
+                <li class="list-group-item list-group-item-success">A simple success list group item</li>
+                <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+                <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+                <li class="list-group-item list-group-item-info">A simple info list group item</li>
+                <li class="list-group-item list-group-item-light">A simple light list group item</li>
+                <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+            </ul>
+        </div>
+        <div class="col-md-9"></div>
+    </div>*@
+
+
+@*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*@
+
+<!-- ***** Preloader Start ***** -->
+
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-    <div class="col-md-9"></div>
-    
+</div>
 
-</div>*@
-
-<div class="container">
-<header class="blog-header py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pt-1">
-            <a class="text-muted" href="#">Subscribe</a>
+<!-- ***** Preloader End ***** -->
+<!-- Header -->
+<header class="">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><h2>Bike <em>Stores</em></h2></a>
+            <img id="logo" src="images/baby-bike.png" alt="Alternate Text" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            Anasayfa
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="#">Large</a>
-        </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-            <a class="text-muted" href="#" aria-label="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
-            </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
-        </div>
-    </div>
+    </nav>
 </header>
 
-<div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-        
-        @foreach (var item in Model.Categories)
-        {
-            <a class="p-2 text-muted" id="@item.category_name.Trim().Replace(" ",String.Empty).ToLower()" asp-controller="Home" asp-action="ChildrenBicycles" >@item.category_name </a>
-        }
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+<div class="banner header-text">
+    <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+            <div class="text-content">
 
-       
+                <h4>Dağ Bisikleti </h4>
+                <br /> <br />
+                <img id="dagbisikleti" src="images/mountain-bike (1).png" alt="Alternate Text" style="width: 50%;" />
+                <h2>New Arrivals On Sale</h2>
+            </div>
+        </div>
+        <div class="banner-item-02">
+            <div class="text-content">
+                <h4>Yol Bisikleti</h4>
+                <br /><br />
+                <img id="yolbisikleti" src="images/bycicle (1).png" alt="Alternate Text" />
+                <h2>Get your best products</h2>
+            </div>
+        </div>
+        <div class="banner-item-03">
+            <div class="text-content">
+                <h4>Çocuk Bisikleti</h4>
+                <br /><br />
+                <img id="cocukbisikleti" src="images/bycicle.png" alt="Alternate Text" />
+                <h2>Grab last minute deals</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner Ends Here -->
 
-    </nav>
+<div class="latest-products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>Latest Products</h2>
+                    <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="images/product_01.jpg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Tittle goes here</h4></a>
+                        <h6>$25.75</h6>
+                        <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (24)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="images/product_02.jpg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Tittle goes here</h4></a>
+                        <h6>$30.25</h6>
+                        <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (21)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="images/product_03.jpg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Tittle goes here</h4></a>
+                        <h6>$20.45</h6>
+                        <p>Sixteen Clothing is free CSS template provided by TemplateMo.</p>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (36)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="images/product_04.jpg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Tittle goes here</h4></a>
+                        <h6>$15.25</h6>
+                        <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (48)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="images/product_05.jpg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Tittle goes here</h4></a>
+                        <h6>$12.50</h6>
+                        <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (16)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="images/product_06.jpg" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>Tittle goes here</h4></a>
+                        <h6>$22.50</h6>
+                        <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>Reviews (32)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<div class="best-features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>About Sixteen Clothing</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="left-content">
+                    <h4>Looking for the best products?</h4>
+                    <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
+                    <ul class="featured-list">
+                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#">Consectetur an adipisicing elit</a></li>
+                        <li><a href="#">It aquecorporis nulla aspernatur</a></li>
+                        <li><a href="#">Corporis, omnis doloremque</a></li>
+                        <li><a href="#">Non cum id reprehenderit</a></li>
+                    </ul>
+                    <a href="about.html" class="filled-button">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-image">
+                    <img src="images/feature-image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+<div class="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="filled-button">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner-content">
+                    <p>
+                        Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
+
+                        - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript -->
+
+
+
+
+<!-- Additional Scripts -->
+<script src="/js/Scripts/template/custom.js"></script>
+<script src="/js/Scripts/template/owl.js"></script>
+<script src="/js/Scripts/template/slick.js.js"></script>
+<script src="/js/Scripts/template/isotope.js.js"></script>
+<script src="/js/Scripts/template/accordions.js.js"></script>
+
+
+<script language="text/Javascript">
+
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+</script>
+
+<script id="__bs_script__">
+    //<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.12'><\/script>".replace("HOST", location.hostname));
+//]]></script>
