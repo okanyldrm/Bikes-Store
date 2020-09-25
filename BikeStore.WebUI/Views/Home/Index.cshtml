@@ -40,7 +40,7 @@
 <header class="">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#"><h2>Bike <em>Stores</em></h2></a>
+            <a class="navbar-brand"  asp-controller="Home" asp-action="Index"><h2>Bike <em>Stores</em></h2></a>
             <img id="logo" src="images/baby-bike.png" alt="Alternate Text" />
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -48,19 +48,19 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">
-                            Anasayfa
+                        <a class="nav-link"  asp-controller="Home" asp-action="Index">
+                            Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Ürünler</a>
+                        <a class="nav-link" asp-controller="Product" asp-action="GetAllProductView">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Hakkımızda</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">İletişim</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -75,7 +75,7 @@
         <div class="banner-item-01">
             <div class="text-content">
 
-                <h4>Dağ Bisikleti </h4>
+                <h4>Mountain Bike </h4>
                 <br /> <br />
                 <img id="dagbisikleti" src="images/mountain-bike (1).png" alt="Alternate Text" style="width: 50%;" />
                 <h2>New Arrivals On Sale</h2>
@@ -83,7 +83,7 @@
         </div>
         <div class="banner-item-02">
             <div class="text-content">
-                <h4>Yol Bisikleti</h4>
+                <h4>Road Bike</h4>
                 <br /><br />
                 <img id="yolbisikleti" src="images/bycicle (1).png" alt="Alternate Text" />
                 <h2>Get your best products</h2>
@@ -91,7 +91,7 @@
         </div>
         <div class="banner-item-03">
             <div class="text-content">
-                <h4>Çocuk Bisikleti</h4>
+                <h4>Kid Bike</h4>
                 <br /><br />
                 <img id="cocukbisikleti" src="images/bycicle.png" alt="Alternate Text" />
                 <h2>Grab last minute deals</h2>
@@ -106,16 +106,16 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
-                    <h2>Latest Products</h2>
+                    <h2>Products</h2>
                     <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="product-item">
-                    <a href="#"><img src="images/product_01.jpg" alt=""></a>
+                    <a href="#"><img src="https://images.unsplash.com/photo-1484920274317-87885fcbc504?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt=""></a>
                     <div class="down-content">
                         <a href="#"><h4>Tittle goes here</h4></a>
-                        <h6>$25.75</h6>
+                        <h6>$50.75</h6>
                         <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
                         <ul class="stars">
                             <li><i class="fa fa-star"></i></li>
@@ -130,10 +130,10 @@
             </div>
             <div class="col-md-4">
                 <div class="product-item">
-                    <a href="#"><img src="images/product_02.jpg" alt=""></a>
+                    <a href="#"><img src="https://images.unsplash.com/photo-1595704667942-4f09b8181d9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt=""></a>
                     <div class="down-content">
                         <a href="#"><h4>Tittle goes here</h4></a>
-                        <h6>$30.25</h6>
+                        <h6>$40.25</h6>
                         <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
                         <ul class="stars">
                             <li><i class="fa fa-star"></i></li>
@@ -148,10 +148,10 @@
             </div>
             <div class="col-md-4">
                 <div class="product-item">
-                    <a href="#"><img src="images/product_03.jpg" alt=""></a>
+                    <a href="#"><img src="https://images.unsplash.com/15/tricycle.JPG?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt=""></a>
                     <div class="down-content">
                         <a href="#"><h4>Tittle goes here</h4></a>
-                        <h6>$20.45</h6>
+                        <h6>$49.45</h6>
                         <p>Sixteen Clothing is free CSS template provided by TemplateMo.</p>
                         <ul class="stars">
                             <li><i class="fa fa-star"></i></li>
@@ -166,10 +166,10 @@
             </div>
             <div class="col-md-4">
                 <div class="product-item">
-                    <a href="#"><img src="images/product_04.jpg" alt=""></a>
+                    <a href="#"><img src="https://images.unsplash.com/photo-1469391923172-aacc0306ee0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1384&q=80" alt=""></a>
                     <div class="down-content">
                         <a href="#"><h4>Tittle goes here</h4></a>
-                        <h6>$15.25</h6>
+                        <h6>$75.25</h6>
                         <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
                         <ul class="stars">
                             <li><i class="fa fa-star"></i></li>
@@ -184,10 +184,10 @@
             </div>
             <div class="col-md-4">
                 <div class="product-item">
-                    <a href="#"><img src="images/product_05.jpg" alt=""></a>
+                    <a href="#"><img src="https://images.unsplash.com/photo-1524083531058-82ec9694e8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80" alt=""></a>
                     <div class="down-content">
                         <a href="#"><h4>Tittle goes here</h4></a>
-                        <h6>$12.50</h6>
+                        <h6>$32.50</h6>
                         <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
                         <ul class="stars">
                             <li><i class="fa fa-star"></i></li>
@@ -202,10 +202,10 @@
             </div>
             <div class="col-md-4">
                 <div class="product-item">
-                    <a href="#"><img src="images/product_06.jpg" alt=""></a>
+                    <a href="#"><img src="https://images.unsplash.com/photo-1579649452167-73ef3e6d5ec9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt=""></a>
                     <div class="down-content">
                         <a href="#"><h4>Tittle goes here</h4></a>
-                        <h6>$22.50</h6>
+                        <h6>$60.50</h6>
                         <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
                         <ul class="stars">
                             <li><i class="fa fa-star"></i></li>
@@ -227,7 +227,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
-                    <h2>About Sixteen Clothing</h2>
+                    <h2>About Bicycle</h2>
                 </div>
             </div>
             <div class="col-md-6">
@@ -246,7 +246,7 @@
             </div>
             <div class="col-md-6">
                 <div class="right-image">
-                    <img src="images/feature-image.jpg" alt="">
+                    <img src="https://images.unsplash.com/photo-1511466431307-d603e868975c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
                 </div>
             </div>
         </div>
@@ -261,7 +261,7 @@
                 <div class="inner-content">
                     <div class="row">
                         <div class="col-md-8">
-                            <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
+                            <h4>Creative &amp; Unique <em></em> Products</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
                         </div>
                         <div class="col-md-4">
@@ -281,9 +281,9 @@
             <div class="col-md-12">
                 <div class="inner-content">
                     <p>
-                        Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
+                        Copyright &copy; 2020 Bike Store Co., Ltd.
 
-                        - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                        - Design: <a rel="nofollow noopener"  target="_blank">Mr-Oko</a>
                     </p>
                 </div>
             </div>
@@ -298,11 +298,11 @@
 
 
 <!-- Additional Scripts -->
-<script src="/js/Scripts/template/custom.js"></script>
+<!--<script src="/js/Scripts/template/custom.js"></script>
 <script src="/js/Scripts/template/owl.js"></script>
-<script src="/js/Scripts/template/slick.js.js"></script>
-<script src="/js/Scripts/template/isotope.js.js"></script>
-<script src="/js/Scripts/template/accordions.js.js"></script>
+<script src="/js/Scripts/template/slick.js"></script>
+<script src="/js/Scripts/template/isotope.js"></script>
+<script src="/js/Scripts/template/accordions.js"></script>-->
 
 
 <script language="text/Javascript">
@@ -317,7 +317,3 @@
       }
 </script>
 
-<script id="__bs_script__">
-    //<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.12'><\/script>".replace("HOST", location.hostname));
-//]]></script>

@@ -5,33 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - BikeStore</title>
 
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+
+
+
     <!-- Bootstrap core CSS -->
-    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#563d7c">
-
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @* FontAwesome core CSS *@
+    <link rel="stylesheet" href="/css/template/fontawesome.css">
     <!-- Additional CSS Files template -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/template/fontawesome.css">
+    @* Other *@
     <link rel="stylesheet" href="/css/template/templatemo-sixteen.css">
     <link rel="stylesheet" href="/css/template/owl.css">
 
-    
+
+    <!-- Favicons -->
+    @*<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+        <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+        <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">*@
+    @*<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">*@
+    <meta name="theme-color" content="#563d7c">
 
 
+    @*<script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/Scripts/HomeJs/Home.js"></script>*@
+    <!-- Additional Scripts -->
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/Scripts/HomeJs/Home.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="/js/Scripts/template/custom.js"></script>
+    <script src="/js/Scripts/template/owl.js"></script>
+    <script src="/js/Scripts/template/slick.js"></script>
+    <script src="/js/Scripts/template/isotope.js"></script>
+    <script src="/js/Scripts/template/accordions.js"></script>
 
 </head>
 <body>
@@ -41,10 +53,12 @@
 
 
     <footer class="border-top footer text-muted">
+        Footer
     </footer>
 
-    @RenderSection("Scripts", required: false)
-   
+    @RenderSection("scripts", required: false)
+
+
 
 </body>
 </html>

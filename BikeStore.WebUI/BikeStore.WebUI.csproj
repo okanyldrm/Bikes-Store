@@ -22,4 +22,8 @@
     <ProjectReference Include="..\BikeStore.DataAccess\BikeStore.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\js\Scripts\NewFolder\" />
+  </ItemGroup>
+
 </Project>
