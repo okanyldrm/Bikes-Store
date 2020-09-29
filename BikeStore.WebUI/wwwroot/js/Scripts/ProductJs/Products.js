@@ -1,19 +1,24 @@
 ﻿$(document).ready(function () {
 
 
-    $("#mountainbike-tab").on("click", function () {
+    $("#get-mountain-bike").on("click", function () {
+        //alert("get mountain bike");
         $.ajax({
-            url: '/Product/GetAll',
+            url: '/Product/GetByCategories',
             type: 'GET',
             dataType: 'json',
             success: function (data) {
                 console.log(data);
-
-
-                //$.each(data.products, function (i,item) {
-                //    //console.log(item.product_name);
-                //    $("#AllProduct").append("<table class='table'><thead class='thead-dark'><tr><td>Product Name</td></tr></thead> <tbody><tr><td>" + item.product_name + "</td> </tr> </tbody></table>");
-                //});
+                $(data.products).each(function(i,mountainbike) {
+                    $('#mountaintableBody').append($("<tr>")
+                        .append($("<td>").append(mountainbike.product_name))
+                        .append($("<td>").append(mountainbike.brand_id))
+                        .append($("<td>").append(mountainbike.category_id))
+                        .append($("<td>").append(mountainbike.list_price)));
+                });
+            },
+            error: function() {
+                alert("Not Working GetMountainBike");
             }
         });
     });

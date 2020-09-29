@@ -38,6 +38,19 @@ namespace BikeStore.WebUI.Controllers
         }
 
 
+        public IActionResult GetByCategories(int categoryId=6)
+        {
+            List<Product> productsOfCategory = _productService.GetByCategories(categoryId);
+
+            var model = new ProductListViewModel()
+            {
+                Products = productsOfCategory
+            };
+            return Json(model);
+        }
+    
+
+
 
         public IActionResult GetAllProductView()
         {

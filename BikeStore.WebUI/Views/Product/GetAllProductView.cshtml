@@ -55,7 +55,16 @@
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
+            <br /><br />
+                  <div class="row">
+                      <div class="col-md-2">
+                          
+                      </div>
+                      <div class="col-md-10">
+                          <button id="get-mountain-bike" class="btn btn-success" >Get Mountain Bike</button>
+                      </div>
+                  </div>
+            
             @* Mountain Bikes *@
             <div class="latest-products">
                 <div class="container">
@@ -65,8 +74,27 @@
                                 <h2>Mountain Bike</h2>
                                 <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
                             </div>*@
+
                         </div>
-                        <div class="col-md-4">
+
+
+
+
+
+                        @* Products Mountain *@
+
+                    <table id="mountaintable" class="table table-dark">
+                        <thead>
+                            <td>Id</td>
+                            <td>Name</td>
+                            <td>CategoryId</td>
+                            <td>Price</td>
+                        </thead>
+                        <tbody id="mountaintableBody"></tbody>
+                    </table>
+                        
+
+                        @*<div class="col-md-4">
                             <div class="product-item">
                                 <a href="#"><img src="https://images.unsplash.com/photo-1484920274317-87885fcbc504?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt=""></a>
                                 <div class="down-content">
@@ -83,25 +111,17 @@
                                     <span>Reviews (24)</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="product-item">
-                                <a href="#"><img src="https://images.unsplash.com/photo-1595704667942-4f09b8181d9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt=""></a>
-                                <div class="down-content">
-                                    <a href="#"><h4>Tittle goes here</h4></a>
-                                    <h6>$40.25</h6>
-                                    <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                    <span>Reviews (21)</span>
-                                </div>
-                            </div>
-                        </div>
+                        </div>*@
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -114,8 +134,8 @@
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</div>
     </div>
 
-    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/js/Scripts/ProductJs/Products.js"></script>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/Scripts/ProductJs/Products.js"></script>
 
 
 
