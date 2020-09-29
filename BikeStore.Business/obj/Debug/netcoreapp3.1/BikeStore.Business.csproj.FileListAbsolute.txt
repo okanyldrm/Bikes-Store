@@ -8,9 +8,9 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\bin\Debug\netcoreapp3.1
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\bin\Debug\netcoreapp3.1\BikeStore.Entities.pdb
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\bin\Debug\netcoreapp3.1\BikeStore.Core.pdb
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\obj\Debug\netcoreapp3.1\BikeStore.Business.csprojAssemblyReference.cache
-C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\obj\Debug\netcoreapp3.1\BikeStore.Business.csproj.CoreCompileInputs.cache
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\obj\Debug\netcoreapp3.1\BikeStore.Business.AssemblyInfoInputs.cache
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\obj\Debug\netcoreapp3.1\BikeStore.Business.AssemblyInfo.cs
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\obj\Debug\netcoreapp3.1\BikeStore.Business.csproj.CoreCompileInputs.cache
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\obj\Debug\netcoreapp3.1\BikeStore.Business.csproj.CopyComplete
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\obj\Debug\netcoreapp3.1\BikeStore.Business.dll
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Business\obj\Debug\netcoreapp3.1\BikeStore.Business.pdb
