@@ -21,6 +21,10 @@
                 alert("Not Working GetMountainBike");
             }
         });
+
+        $("#table-show-hide").on("click", function() {
+            $("#mountaintableBody").toggle();
+        })
     });
 
 
