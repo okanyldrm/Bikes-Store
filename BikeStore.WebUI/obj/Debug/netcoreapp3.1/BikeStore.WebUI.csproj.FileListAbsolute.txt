@@ -440,3 +440,4 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\st
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\BikeStore.WebUI.dll
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\BikeStore.WebUI.pdb
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\BikeStore.WebUI.genruntimeconfig.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\About\Index.cshtml.g.cs

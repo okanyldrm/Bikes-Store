@@ -8,8 +8,9 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" asp-controller="Home" asp-action="Index">
-                    <h2>Bike <em>Stores</em></h2></a>
-                <img id="logo" src="~/images/baby-bike.png" alt="Alternate Text"/>
+                    <h2>Bike <em>Stores</em></h2>
+                </a>
+                <img id="logo" src="~/images/baby-bike.png" alt="Alternate Text" />
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,7 +26,7 @@
                             <a class="nav-link" asp-controller="Product" asp-action="GetAllProductView">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link"asp-controller="About" asp-action="Index" >About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
@@ -42,65 +43,59 @@
 <br />
 <br />
 
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="mountainbike-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mountain Bike</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Road Bike</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Kid Bike</a>
-        </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <br /><br />
-                  <div class="row">
-                      <div class="col-md-1">
-                          
-                      </div>
-                      <div class="col-md-11">
-                          <button id="get-mountain-bike" class="btn btn-success btn-sm">Get Mountain Bike</button>
-                          <button id="table-show-hide" class="btn btn-danger btn-sm">Hide/Show</button>
-                          <br /><br />
-                          <form class="form-inline">
-                              <input class="form-control " type="search" placeholder="Search" aria-label="Search">
-                              <button class="btn btn-outline-success " type="submit">Search</button>
-                          </form>
-                      </div>
-                  </div>
-            
-            @* Mountain Bikes *@
-            <div class="latest-products">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            @*<div class="section-heading">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="mounth-bike" data-toggle="tab" href="#mountain" role="tab" aria-controls="home" aria-selected="true">Mountain Bike</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="road-bike" data-toggle="tab" href="#road" role="tab" aria-controls="profile" aria-selected="false">Road Bike</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#kid" role="tab" aria-controls="contact" aria-selected="false">Kid Bike</a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="mountain" role="tabpanel" aria-labelledby="home-tab">
+        <br /><br />
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-11">
+                <button id="get-mountain-bike" class="btn btn-success btn-sm">Get Mountain Bike</button>
+                <button id="table-show-hide" class="btn btn-danger btn-sm">Hide/Show</button>
+                <br /><br />
+                <form class="form-inline">
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success " type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+        @* Mountain Bikes *@
+        <div class="latest-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        @*<div class="section-heading">
                                 <h2>Mountain Bike</h2>
                                 <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
                             </div>*@
+                    </div>
 
-                        </div>
-
-
-
-
-
-                        @* Products Mountain *@
-
+                    @* Products Mountain *@
                     <table id="mountaintable" class="table table-dark">
                         <thead>
-                            <td>Id</td>
-                            <td>Name</td>
-                            <td>CategoryId</td>
-                            <td>Price</td>
+                        <td>Id</td>
+                        <td>Name</td>
+                        <td>CategoryId</td>
+                        <td>Price</td>
                         </thead>
                         <tbody id="mountaintableBody"></tbody>
                     </table>
-                        
 
-                        @*<div class="col-md-4">
+
+                    @*<div class="col-md-4">
                             <div class="product-item">
                                 <a href="#"><img src="https://images.unsplash.com/photo-1484920274317-87885fcbc504?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt=""></a>
                                 <div class="down-content">
@@ -118,29 +113,57 @@
                                 </div>
                             </div>
                         </div>*@
-
-
-
-
-
-
-
-
-
-
-                    </div>
                 </div>
             </div>
-
-
-
-
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</div>
-    </div>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+
+
+    </div>
+    <div class="tab-pane fade" id="road" role="tabpane" aria-labelledby="profile-tab">
+        <br /><br />
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-11">
+                <button id="get-road-bike" class="btn btn-success btn-sm">Get Road Bike</button>
+                <button id="table-show-hide-road" class="btn btn-danger btn-sm">Hide/Show</button>
+                <br /><br />
+                <form class="form-inline">
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success " type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        @* Road Bikes *@
+        <div class="latest-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"></div>
+
+                    @* Products Mountain *@
+                    <table id="road-table" class="table table-dark">
+                        <thead>
+                        <td>Id</td>
+                        <td>Name</td>
+                        <td>CategoryId</td>
+                        <td>Price</td>
+                        </thead>
+                        <tbody id="roadtablebody"></tbody>
+                    </table>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="kid" role="tabpanel" aria-labelledby="contact-tab">Kid Bike, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/Scripts/ProductJs/Products.js"></script>
 
 

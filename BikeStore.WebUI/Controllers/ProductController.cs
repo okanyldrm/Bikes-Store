@@ -38,7 +38,7 @@ namespace BikeStore.WebUI.Controllers
         }
 
 
-        public IActionResult GetByCategories(int categoryId=6)
+        public IActionResult GetByCategoriesMounth(int categoryId=6)
         {
             List<Product> productsOfCategory = _productService.GetByCategories(categoryId);
 
@@ -48,7 +48,19 @@ namespace BikeStore.WebUI.Controllers
             };
             return Json(model);
         }
-    
+
+
+        public IActionResult GetByCategoriesRoad(int categoryId = 7)
+        {
+            List<Product> productsOfCategory = _productService.GetByCategories(categoryId);
+
+            var model = new ProductListViewModel()
+            {
+                Products = productsOfCategory
+            };
+            return Json(model);
+        }
+
 
 
 
@@ -73,14 +85,12 @@ namespace BikeStore.WebUI.Controllers
         {
 
             var result = _productService.MaxPriceProduct();
-
             return Json(result);
         }
 
         public IActionResult GetById(int id=2)
         {
             var result = _productService.GetById(id);
-
             return Json(result);
         }
 
