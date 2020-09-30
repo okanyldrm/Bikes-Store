@@ -11,8 +11,8 @@
                 console.log(data);
                 $(data.products).each(function(i,mountainbike) {
                     $('#mountaintableBody').append($("<tr>")
+                        .append($("<td>").append(mountainbike.product_id))
                         .append($("<td>").append(mountainbike.product_name))
-                        .append($("<td>").append(mountainbike.brand_id))
                         .append($("<td>").append(mountainbike.category_id))
                         .append($("<td>").append(mountainbike.list_price)));
                 });
@@ -43,8 +43,8 @@
                 console.log(data);
                 $(data.products).each(function (i, roadbike) {
                     $('#roadtablebody').append($("<tr>")
+                        .append($("<td>").append(roadbike.product_id))
                         .append($("<td>").append(roadbike.product_name))
-                        .append($("<td>").append(roadbike.brand_id))
                         .append($("<td>").append(roadbike.category_id))
                         .append($("<td>").append(roadbike.list_price)));
                 });
@@ -149,9 +149,8 @@
         });
     });
 
-
-
-
+  
+    
 
 });
 

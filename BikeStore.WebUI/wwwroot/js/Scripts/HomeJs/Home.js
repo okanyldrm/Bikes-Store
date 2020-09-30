@@ -29,11 +29,8 @@ $(document).ready(function() {
 
     $("#video").css({ "height": "400px", "width": "500px" });
 
-   
-  
 
-
-  
    
+
 
 });
