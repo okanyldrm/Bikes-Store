@@ -56,7 +56,7 @@
                         <a class="nav-link" asp-controller="Product" asp-action="GetAllProductView">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="About" asp-action="Index" >About Us</a>
+                        <a class="nav-link" asp-controller="About" asp-action="Index">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -64,17 +64,26 @@
                 </ul>
             </div>
         </div>
-    </nav>
-</header>
 
+    </nav>
+    
+</header>
+<div class="container">
+    <br /><br /> <br /><br /> <br /><br /> <br /><br />
+    <video id="bikevideo" controls autoplay muted >
+       
+        <source src="~/video/bike.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+    </video>
+</div>
 <!-- Page Content -->
 <!-- Banner Starts Here -->
-<div class="banner header-text">
-    <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-            <div class="text-content">
-
-                <h4>Mountain Bike </h4>
+<!--<div class="banner header-text">
+<div class="owl-banner owl-carousel">
+<div class="banner-item-01">
+<div class="text-content">
+        <h4>Mountain Bike </h4>
                 <br /> <br />
                 <img id="dagbisikleti" src="images/mountain.png" alt="Alternate Text" style="width: 50%;" />
                 <h2>New Arrivals On Sale</h2>
@@ -97,8 +106,19 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- Banner Ends Here -->
+@*<div class="container">
+        <video id="bikevideo" controls autoplay muted>
+            <source src="~/video/bike.webm" type="video/webm">
+            <source src="~/video/bike.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
+    </div>*@
+
+
+
 
 <div class="latest-products">
     <div class="container">
@@ -245,7 +265,18 @@
             </div>
             <div class="col-md-6">
                 <div class="right-image">
-                    <img src="https://images.unsplash.com/photo-1511466431307-d603e868975c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                    @*<img src="https://images.unsplash.com/photo-1511466431307-d603e868975c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">*@
+
+
+                    <video id="video" controls autoplay muted>
+                        <source src="~/video/bike.mp4" type="video/mp4" />
+                    </video>
+
+
+
+
+
+
                 </div>
             </div>
         </div>

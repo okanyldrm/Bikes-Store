@@ -26,6 +26,10 @@ $(document).ready(function() {
     $("#cocukbisikleti").css({ "text- align": "center", "display": "block", "margin": "0 auto" });
 
     $("#logo").css({ "height": "50px", "width": "50px" });
+
+    $("#video").css({ "height": "400px", "width": "500px" });
+
+   
   
 
 
