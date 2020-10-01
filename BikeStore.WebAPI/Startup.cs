@@ -6,9 +6,12 @@ using BikeStore.Business.Abstract;
 using BikeStore.Business.Concrete.Managers;
 using BikeStore.DataAccess.Abstract;
 using BikeStore.DataAccess.Concrete.EntityFramework;
+using BikeStore.WebAPI.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -33,6 +36,7 @@ namespace BikeStore.WebAPI
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryDal, EfCategoryDal>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,21 +46,15 @@ namespace BikeStore.WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-
-
                 //endpoints.MapControllerRoute(
                 //name: "default",
                 //pattern: "api/{controller}/{action}");
-
-
             });
         }
     }

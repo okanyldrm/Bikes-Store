@@ -12,8 +12,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace BikeStore.WebUI.Controllers
 {
 
-   
-   
+
+    //Identity bu sınıf giriş yapılmadan kullanılamaz
+    [Authorize]
     public class ProductController : Controller
     {
 
@@ -26,6 +27,7 @@ namespace BikeStore.WebUI.Controllers
         }
 
 
+     
         public IActionResult GetAll()
         {
 

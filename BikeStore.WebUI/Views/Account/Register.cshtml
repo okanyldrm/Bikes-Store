@@ -3,16 +3,13 @@
 
 @{
     ViewBag.Title = "title";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="container">
     <div id="signupbox" style="margin-top:50px;" class="mainbox col-md-6">
         <div class="panel panel-info">
-            <div class="panel-heading">
-                <div class="panel-title">Sign Up</div>
-                <div style="float:right; font-size: 85%; position: relative; top:-10px"><a asp-controller="Account" asp-action="Login">Sign In</a></div>
-            </div>
+           
             <div class="panel-body">
                 <form asp-controller="Account" asp-action="Register" method="post" class="form-horizontal" role="form">
                     <div class="form-group">

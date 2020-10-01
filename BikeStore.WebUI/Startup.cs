@@ -35,9 +35,9 @@ namespace BikeStore.WebUI
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryDal, EfCategoryDal>();
-            services.AddDbContext<CustomIdentityDbContext>
-                (options => options.UseSqlServer("Server=(localdb)\\mssqllocaldb; Database=BikeStores; Trusted_Connection=True"));
-            services.AddIdentity<CustomIdentityUser, CustomIdentityRole>().AddEntityFrameworkStores<CustomIdentityDbContext>().AddDefaultTokenProviders();
+            services.AddDbContext<CustomIdentityDbContext>(options => options.UseSqlServer("Server=(localdb)\\mssqllocaldb; Database=BikeStores; Trusted_Connection=True"));
+            services.AddIdentity<CustomIdentityUser, CustomIdentityRole>()
+                .AddEntityFrameworkStores<CustomIdentityDbContext>().AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,7 +57,7 @@ namespace BikeStore.WebUI
 
             app.UseAuthorization();
 
-          
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

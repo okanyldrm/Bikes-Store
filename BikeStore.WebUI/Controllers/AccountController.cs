@@ -31,7 +31,7 @@ namespace BikeStore.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Register(RegisterViewModel registerViewModel)
         {
-            if (ModelState.IsValid)//model isValid ise
+            if (ModelState.IsValid)
             {
                 CustomIdentityUser user = new CustomIdentityUser
                 {
@@ -39,16 +39,13 @@ namespace BikeStore.WebUI.Controllers
                     Email = registerViewModel.Email
                 };
 
-                //Kullanici olusturma
                 IdentityResult result =
                     _userManager.CreateAsync(user, registerViewModel.Password).Result;
 
                 if (result.Succeeded)
                 {
-                    //sistemde admin diye bir role var mı?
                     if (!_roleManager.RoleExistsAsync("Admin").Result)
                     {
-                        //yoksa role oluşturuyorsun
                         CustomIdentityRole role = new CustomIdentityRole
                         {
                             Name = "Admin"
@@ -87,7 +84,7 @@ namespace BikeStore.WebUI.Controllers
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Admin");
+                    return RedirectToAction("GetAllProductView", "Product");
                 }
 
                 ModelState.AddModelError("", "Invalid login!");
@@ -103,6 +100,7 @@ namespace BikeStore.WebUI.Controllers
             _signInManager.SignOutAsync().Wait();
             return RedirectToAction("Login");
         }
+
 
 
 

@@ -5,26 +5,25 @@ using System.Threading.Tasks;
 using BikeStore.Business.Abstract;
 using BikeStore.Entities.ComplexType;
 using BikeStore.Entities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BikeStore.WebAPI.Controllers
 {
 
     [Route("api/[controller]")]
+
     public class ProductController : Controller
     {
 
 
-
+      
         private IProductService _productService;
 
         public ProductController(IProductService productService)
         {
             _productService = productService;
         }
-
-
-
 
 
         [HttpGet("GetAll")]
