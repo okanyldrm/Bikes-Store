@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BikeStore.Business.Abstract;
+using BikeStore.Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BikeStore.WebAPI.Controllers
@@ -40,7 +41,15 @@ namespace BikeStore.WebAPI.Controllers
         }
 
 
-        
+
+        [HttpPost("AddCategory")]
+        public void AddCategory([FromBody]Category category)
+        {
+            _categoryService.Add(category);
+            
+        }
+
+
 
 
     }

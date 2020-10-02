@@ -6,6 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
+
 namespace BikeStore.Core.DataAccess.EntityFramework
 {
     public class EfRepositoryBase<T, TContext> : IRepository<T>
@@ -60,4 +61,6 @@ namespace BikeStore.Core.DataAccess.EntityFramework
             }
         }
     }
+
+  
 }

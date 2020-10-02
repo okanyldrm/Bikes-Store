@@ -25,7 +25,9 @@ namespace BikeStore.WebAPI.Controllers
             _productService = productService;
         }
 
-
+        //<summary>
+        //Product getall fonksiyonu 
+        //</summary>
         [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
@@ -62,6 +64,19 @@ namespace BikeStore.WebAPI.Controllers
         {
             List<Product> products = _productService.GetByCategories(categoryId);
             return Json(products);
+        }
+
+        [HttpPost("AddProduct")]
+        public void AddProduct([FromBody]Product product)
+        {
+            _productService.Add(product);
+            
+        }
+
+        [HttpDelete("DeleteProduct")]
+        public void DeleteProduct()
+        {
+
         }
 
 
