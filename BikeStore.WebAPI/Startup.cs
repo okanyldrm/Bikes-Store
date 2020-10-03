@@ -36,6 +36,8 @@ namespace BikeStore.WebAPI
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryDal, EfCategoryDal>();
+            services.AddScoped<IBrandService, BrandManager>();
+            services.AddScoped<IBrandDal, EfBrandDal>();
             services.AddSwaggerGen(option =>
             {
                 option.SwaggerDoc("v1",

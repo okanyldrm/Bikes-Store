@@ -1,0 +1,8 @@
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\bin\Release\netcoreapp3.1\BikeStore.Core.deps.json
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\bin\Release\netcoreapp3.1\BikeStore.Core.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\bin\Release\netcoreapp3.1\BikeStore.Core.pdb
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Release\netcoreapp3.1\BikeStore.Core.AssemblyInfoInputs.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Release\netcoreapp3.1\BikeStore.Core.AssemblyInfo.cs
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Release\netcoreapp3.1\BikeStore.Core.csproj.CoreCompileInputs.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Release\netcoreapp3.1\BikeStore.Core.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Release\netcoreapp3.1\BikeStore.Core.pdb

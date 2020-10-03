@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeStore.Business", "BikeS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeStore.WebUI", "BikeStore.WebUI\BikeStore.WebUI.csproj", "{262A8797-322B-4EA5-8F27-207782D54F7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeStore.WebAPI", "BikeStore.WebAPI\BikeStore.WebAPI.csproj", "{E609FA9F-9141-40DA-9E2A-9E7233CC19AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeStore.WebAPI", "BikeStore.WebAPI\BikeStore.WebAPI.csproj", "{E609FA9F-9141-40DA-9E2A-9E7233CC19AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

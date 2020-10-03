@@ -73,11 +73,25 @@ namespace BikeStore.WebAPI.Controllers
             
         }
 
-        [HttpDelete("DeleteProduct")]
-        public void DeleteProduct()
+        [HttpDelete("DeleteProduct/{product}")]
+        public IActionResult DeleteProduct([FromBody]Product product)
         {
+            _productService.Delete(product);
+            string message = product.product_id + "-Deleted";
+            return Json(message);
 
         }
+
+
+        [HttpPut("UpdateProduct/{product}")]
+        public IActionResult UpdateProduct([FromBody] Product product)
+        {
+            _productService.Update(product);
+            string message = product.product_id+ "-Updated";
+            return Json(message);
+        }
+
+
 
 
 

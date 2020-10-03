@@ -27,7 +27,6 @@ namespace BikeStore.WebAPI.Controllers
             {
                 Categories = Categories
             };
-
             return Json(model);
 
         }
@@ -48,6 +47,28 @@ namespace BikeStore.WebAPI.Controllers
             _categoryService.Add(category);
             
         }
+
+
+
+
+        [HttpDelete("DeleteCategory")]
+        public void DeleteCategory([FromBody] Category category)
+        {
+            _categoryService.Delete(category);
+
+        }
+
+
+
+
+        [HttpPut("UpdateCategory")]
+        public void UpdateCategory([FromBody] Category category)
+        {
+            _categoryService.Update(category);
+
+        }
+
+
 
 
 
