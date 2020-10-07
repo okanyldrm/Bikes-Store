@@ -152,6 +152,7 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\M
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Debug\netcoreapp3.1\BikeStore.WebAPI.csproj.CoreCompileInputs.cache
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Debug\netcoreapp3.1\BikeStore.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Debug\netcoreapp3.1\BikeStore.WebAPI.MvcApplicationPartsAssemblyInfo.cache

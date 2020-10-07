@@ -20,31 +20,48 @@ namespace BikeStore.WebAPI.Controllers
 
 
         [HttpPost("login")]
-        public IActionResult Index([FromBody]LoginModel model)
+        public IActionResult Login([FromBody]LoginModel model)
         {
 
-            if (model.UserId=="admin" && model.Password=="admin123")
+            if (model.UserName=="admin" && model.Password=="admin123")
             {
+
+                var now = DateTime.UtcNow;
                 var claims = new[]
                 {
-                    new Claim(JwtRegisteredClaimNames.Sub,model.UserId),
+                    new Claim(JwtRegisteredClaimNames.Sub,model.UserName),
                     new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()), 
                 };
                 var singningkey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"));
-                var token = new JwtSecurityToken(
-                    issuer:"oko.com",
-                    audience:"oko.com",
-                    expires: DateTime.Now.AddDays(1),
-                    claims:claims,
-                    signingCredentials:new Microsoft.IdentityModel.Tokens.SigningCredentials(singningkey,SecurityAlgorithms.HmacSha256)
-                    
-                    );
-
-                return Ok(new
+             
+                var tokenValidationParameters = new TokenValidationParameters
                 {
-                    token = new JwtSecurityTokenHandler().WriteToken(token),
-                    expiration = token.ValidTo
-                });
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = singningkey,
+                    ValidateIssuer = true,
+                    ValidIssuer = "localhost",
+                    ValidAudience = "cather-wong",
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero,
+                    RequireExpirationTime = true,
+                };
+                var jwt = new JwtSecurityToken(
+                    issuer:"localhost",
+                    audience:"cather-wong",
+                    claims:claims,
+                    notBefore:now,
+                    expires:now.AddDays(1),
+                    signingCredentials:new SigningCredentials(singningkey,SecurityAlgorithms.HmacSha256)
+                    );
+                var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
+
+                var responseJson = new
+                {
+                    access_token = encodedJwt,
+                    expires_in = (int) TimeSpan.FromMinutes(2).TotalSeconds
+                };
+
+                return Ok(responseJson);
             }
             return Unauthorized();
         }

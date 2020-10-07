@@ -10,8 +10,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BikeStore.WebAPI.Controllers
 {
-
+ 
+    [Authorize]
     [Route("api/[controller]")]
+    [ApiController]
+  
 
     public class ProductController : Controller
     {
@@ -29,6 +32,7 @@ namespace BikeStore.WebAPI.Controllers
         //Product getall fonksiyonu 
         //</summary>
         [HttpGet("GetAll")]
+        
         public IActionResult GetAll()
         {
 
