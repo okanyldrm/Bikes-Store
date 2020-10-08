@@ -26,7 +26,6 @@
             function() {
                 $("#mountaintableBody").toggle(1000);
             });
-
     });
 
 
@@ -40,7 +39,7 @@
             type: 'GET',
             dataType: 'json',
             success: function (data) {
-                console.log(data);
+               // console.log(data);
                 $(data.products).each(function (i, roadbike) {
                     $('#roadtablebody').append($("<tr>")
                         .append($("<td>").append(roadbike.product_id))

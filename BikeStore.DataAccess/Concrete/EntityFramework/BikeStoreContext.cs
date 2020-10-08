@@ -25,6 +25,7 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
         public DbSet<Order> Orders { get; set; }
         public DbSet<Staff> Staffs { get; set; }
         public DbSet<Store> Stores { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
     }

@@ -44,6 +44,8 @@ namespace BikeStore.WebAPI
             services.AddScoped<ICategoryDal, EfCategoryDal>();
             services.AddScoped<IBrandService, BrandManager>();
             services.AddScoped<IBrandDal, EfBrandDal>();
+            services.AddScoped<IUserService, UserManager>();
+            services.AddScoped<IUserDal, EfUserDal>();
 
             //Swagger
             services.AddSwaggerGen(option =>
@@ -101,6 +103,7 @@ namespace BikeStore.WebAPI
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger BikeStoreName");
             });
 
+        
             //Route
             app.UseEndpoints(endpoints =>
             {
@@ -109,7 +112,7 @@ namespace BikeStore.WebAPI
 
                 //endpoints.MapControllerRoute(
                 //    name: "default",
-                //    pattern: "{controller}/{action}/{id?}",
+                //    pattern: "api/{controller}/{action}/{id?}",
                 //    defaults: new { controller = "Product", action = "getall" });
 
                 //endpoints.MapControllerRoute(

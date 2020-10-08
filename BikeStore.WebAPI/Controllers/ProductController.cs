@@ -11,28 +11,23 @@ using Microsoft.AspNetCore.Mvc;
 namespace BikeStore.WebAPI.Controllers
 {
  
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
   
 
     public class ProductController : Controller
     {
-
-
-      
         private IProductService _productService;
-
         public ProductController(IProductService productService)
         {
             _productService = productService;
         }
 
-        //<summary>
-        //Product getall fonksiyonu 
-        //</summary>
+        /// <summary>
+        /// Product getall fonksiyonu 
+        /// </summary>
         [HttpGet("GetAll")]
-        
         public IActionResult GetAll()
         {
 
@@ -74,7 +69,6 @@ namespace BikeStore.WebAPI.Controllers
         public void AddProduct([FromBody]Product product)
         {
             _productService.Add(product);
-            
         }
 
         [HttpDelete("DeleteProduct/{product}")]
@@ -83,9 +77,7 @@ namespace BikeStore.WebAPI.Controllers
             _productService.Delete(product);
             string message = product.product_id + "-Deleted";
             return Json(message);
-
         }
-
 
         [HttpPut("UpdateProduct/{product}")]
         public IActionResult UpdateProduct([FromBody] Product product)
@@ -94,10 +86,6 @@ namespace BikeStore.WebAPI.Controllers
             string message = product.product_id+ "-Updated";
             return Json(message);
         }
-
-
-
-
 
     }
 }

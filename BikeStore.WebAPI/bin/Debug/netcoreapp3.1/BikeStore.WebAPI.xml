@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BikeStore.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:BikeStore.WebAPI.Controllers.ProductController.GetAll">
+            <summary>
+            Product getall fonksiyonu 
+            </summary>
+        </member>
+    </members>
+</doc>

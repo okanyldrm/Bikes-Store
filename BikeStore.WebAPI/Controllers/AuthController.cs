@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using BikeStore.Business.Abstract;
 using BikeStore.Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-
 
 namespace BikeStore.WebAPI.Controllers
 {
@@ -19,13 +20,21 @@ namespace BikeStore.WebAPI.Controllers
     {
 
 
+
+        private IUserService _userService;
+
+        public AuthController(IUserService userService)
+        {
+            _userService = userService;
+        }
+
+
         [HttpPost("login")]
         public IActionResult Login([FromBody]LoginModel model)
         {
 
             if (model.UserName=="admin" && model.Password=="admin123")
             {
-
                 var now = DateTime.UtcNow;
                 var claims = new[]
                 {
@@ -64,6 +73,35 @@ namespace BikeStore.WebAPI.Controllers
                 return Ok(responseJson);
             }
             return Unauthorized();
+        }
+
+
+
+        [HttpPost("register")]
+        public IActionResult Register([FromBody] User registerModel)
+        {
+
+            String password = registerModel.hash_password;
+            String salt = registerModel.user_name;
+            ASCIIEncoding encoding = new ASCIIEncoding();
+
+            Byte[] textBytes = encoding.GetBytes(password);
+            Byte[] keyBytes = encoding.GetBytes(salt);
+            Byte[] hashBytes;
+
+            using (HMACSHA256 hash = new HMACSHA256(keyBytes))
+                hashBytes = hash.ComputeHash(textBytes);
+
+            var hashPassword = BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+
+            var user = new User();
+            user.user_id = registerModel.user_id;
+            user.hash_password = hashPassword;
+            user.user_name = registerModel.user_name;
+
+            _userService.Add(user);
+
+            return Ok(user);
         }
     }
 }

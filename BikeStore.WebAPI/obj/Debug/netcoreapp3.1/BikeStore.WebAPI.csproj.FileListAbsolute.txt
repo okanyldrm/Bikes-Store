@@ -156,3 +156,4 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\M
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Debug\netcoreapp3.1\BikeStore.WebAPI.csproj.CoreCompileInputs.cache
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Debug\netcoreapp3.1\BikeStore.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Debug\netcoreapp3.1\BikeStore.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\BikeStore.WebAPI.xml
