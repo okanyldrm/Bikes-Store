@@ -7,6 +7,7 @@ using BikeStore.DataAccess.Abstract;
 using BikeStore.DataAccess.Concrete.EntityFramework;
 using BikeStore.Entities.Concrete;
 using BikeStore.WebAPI.Data;
+using BikeStore.WebAPI.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -79,6 +80,10 @@ namespace BikeStore.WebAPI
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"))
                 };
             });
+
+
+            //Cloudinary Class'a Map Etme
+            services.Configure<CloudinarySetting>(Configuration.GetSection("CloudinarySetting"));
         }
 
 

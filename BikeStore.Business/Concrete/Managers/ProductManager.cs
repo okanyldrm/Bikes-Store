@@ -60,6 +60,7 @@ namespace BikeStore.Business.Concrete.Managers
             _productDal.Update(product);
         }
 
+
         
     }
 }

@@ -14,5 +14,7 @@ namespace BikeStore.DataAccess.Abstract
         List<Product> GetMaxPriceProduct();
         List<Product> GetByCategory(int categoryId);
 
+      
+
     }
 }

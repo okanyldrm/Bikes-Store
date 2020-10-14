@@ -30,15 +30,37 @@ namespace BikeStore.WebAPI.Controllers
 
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody]LoginModel model)
+        public IActionResult Login([FromBody]LoginModel loginModel)
         {
 
-            if (model.UserName=="admin" && model.Password=="admin123")
+            //String password = loginModel.Password;
+            //String salt = loginModel.UserName;
+            //ASCIIEncoding encoding = new ASCIIEncoding();
+
+
+            //Byte[] textBytes = encoding.GetBytes(password);
+            //Byte[] keyBytes = encoding.GetBytes(salt);
+            //Byte[] hashBytes;
+
+            //using (HMACSHA256 hash = new HMACSHA256(keyBytes))
+            //    hashBytes = hash.ComputeHash(textBytes);
+            //var hashPassword = BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+
+            //var user = new User(); 
+            ////user.user_id = loginModel.;
+            //user.hash_password = hashPassword;
+            //user.user_name = loginModel.UserName;
+
+
+
+
+
+            if (loginModel.UserName=="admin" && loginModel.Password=="admin123")
             {
                 var now = DateTime.UtcNow;
                 var claims = new[]
                 {
-                    new Claim(JwtRegisteredClaimNames.Sub,model.UserName),
+                    new Claim(JwtRegisteredClaimNames.Sub,loginModel.UserName),
                     new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()), 
                 };
                 var singningkey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"));

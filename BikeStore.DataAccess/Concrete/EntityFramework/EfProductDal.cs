@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Transactions;
 using BikeStore.Entities.ComplexType;
 using Microsoft.EntityFrameworkCore;
 using VisioForge.Shared.MediaFoundation.OPM;
@@ -21,20 +22,33 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
             {
 
                 var result =
-                        from p in context.Products
-                        join c in context.Categories on p.category_id equals c.category_id
-                        join s in context.Stocks on p.product_id equals s.product_id
-                        join b in context.Brands on p.brand_id equals b.brand_id
+                        (from p in context.Products
 
-                        select new ProductDetail
-                        {
-                            ProductId = p.product_id,
-                            ProductName = p.product_name,
-                            CategoryName = c.category_name,
-                            Quantity = s.quantity,
-                            Price = p.list_price,
-                            BrandName = b.brand_name
-                        };
+                         join c in context.Categories on p.category_id equals c.category_id into cx from c in cx.DefaultIfEmpty()
+
+                         join s in context.Stocks on p.product_id equals s.product_id
+                         into sx
+                         from s in sx.DefaultIfEmpty()
+                         where s.store_id == 1
+
+                         join b in context.Brands on p.brand_id equals b.brand_id into bx from b in bx.DefaultIfEmpty()
+
+                         join ph in context.Photos on p.product_photo_id equals ph.Id into phx from ph in phx.DefaultIfEmpty()
+
+
+
+
+                         select new ProductDetail
+                         {
+                             ProductId = p.product_id,
+                             ProductName = p.product_name,
+                             CategoryName = c.category_name,
+                             Quantity = s.quantity,
+                             Price = p.list_price,
+                             BrandName = b.brand_name,
+                             Photo = ph.photo_url
+                         });
+
                 return result.ToList();
             }
         }
@@ -61,6 +75,8 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
                 return result;
             }
         }
+
+
     }
 }
 

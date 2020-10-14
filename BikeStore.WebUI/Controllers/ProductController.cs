@@ -14,7 +14,7 @@ namespace BikeStore.WebUI.Controllers
 
 
     //Identity bu sınıf giriş yapılmadan kullanılamaz
-    [Authorize]
+    //[Authorize]
     public class ProductController : Controller
     {
 

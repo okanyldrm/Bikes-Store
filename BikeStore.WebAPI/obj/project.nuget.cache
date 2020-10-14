@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VGy394noJAZeitjl4FScUdHiziFMSZ1gtmcN4o/q7Zh11B0MW/84sHmv6W+7BFH2eEo2UZPIQJUTJ/I8rR049Q==",
+  "dgSpecHash": "Xr7+WJEdaosfPTuvGCagU6DLUMB0q7/82WmTZEvpWdyW1sw9bvQSlBuKSD0jvuDzC+socKCGN2fNOfKaZd8F0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.WebAPI\\BikeStore.WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\OkanY\\.nuget\\packages\\cloudinarydotnet\\1.13.1\\cloudinarydotnet.1.13.1.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
