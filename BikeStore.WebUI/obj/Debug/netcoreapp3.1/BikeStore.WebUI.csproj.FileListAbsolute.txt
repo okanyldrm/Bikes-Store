@@ -442,3 +442,4 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\bin\Debug\netcoreapp3.1\Mi
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\BikeStore.WebUI.csproj.CoreCompileInputs.cache
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\BikeStore.WebUI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\BikeStore.WebUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Product\Detail.cshtml.g.cs

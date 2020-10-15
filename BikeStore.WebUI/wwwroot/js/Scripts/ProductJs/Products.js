@@ -8,13 +8,15 @@
             type: 'GET',
             dataType: 'json',
             success: function (data) {
-                console.log(data);
+                //console.log(data);
                 $(data.products).each(function(i,mountainbike) {
                     $('#mountaintableBody').append($("<tr>")
                         .append($("<td>").append(mountainbike.product_id))
                         .append($("<td>").append(mountainbike.product_name))
                         .append($("<td>").append(mountainbike.category_id))
-                        .append($("<td>").append(mountainbike.list_price)));
+                        .append($("<td>").append(mountainbike.list_price))
+                        .append($("<td>").append("<button class='btn btn-light'>Detail</button>"))
+                    );
                 });
             },
             error: function() {
@@ -27,7 +29,6 @@
                 $("#mountaintableBody").toggle(1000);
             });
     });
-
 
 
 
@@ -152,6 +153,7 @@
     
 
 });
+
 
 
 

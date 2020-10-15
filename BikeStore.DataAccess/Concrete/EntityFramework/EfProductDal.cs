@@ -70,8 +70,8 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
         {
             using (BikeStoreContext context = new BikeStoreContext())
             {
-                string query = "Select * From products where products.category_id = " + categoryId;
-                var result = context.Products.FromSqlRaw(query).ToList();
+                string query = "Select * from products where products.category_id=" + categoryId;
+                var result = context.Products.FromSqlRaw(query).DefaultIfEmpty().ToList();
                 return result;
             }
         }

@@ -106,6 +106,18 @@ namespace BikeStore.WebUI.Controllers
         }
 
 
+        public IActionResult Detail(int id)
+        {
+
+
+           // Product model = _productService.GetById(id);
+
+
+        
+
+            return View();
+        }
+
 
 
 
