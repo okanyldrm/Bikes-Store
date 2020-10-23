@@ -1,0 +1,8 @@
+packages/
+.vs/BikeStore
+.vscode/
+.dockerignore
+BackupBikeStores
+BikeStore.sln
+BikeStore.sln.DotSettings.user
+desktop.ini
