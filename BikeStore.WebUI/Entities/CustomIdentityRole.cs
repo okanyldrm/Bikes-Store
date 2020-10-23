@@ -9,6 +9,6 @@ namespace BikeStore.WebUI.Entities
     public class CustomIdentityRole :IdentityRole
     {
         //Rols
-
+    
     }
 }

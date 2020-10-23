@@ -1,12 +1,12 @@
-﻿@using System.Threading.Tasks
+﻿@*@using System.Threading.Tasks
 @model BikeStore.WebUI.Models.RegisterViewModel
 
 @{
     ViewBag.Title = "title";
     Layout = "~/Views/Shared/_Layout.cshtml";
-}
+}*@
 
-<div class="container">
+<!--<div class="container">
     <div id="signupbox" style="margin-top:50px;" class="mainbox col-md-6">
         <div class="panel panel-info">
            
@@ -36,9 +36,9 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group">-->
                         <!-- Button -->
-                        <div class="col-md-offset-3 col-md-9">
+                        <!--<div class="col-md-offset-3 col-md-9">
                             <input type="submit" class="btn btn-info" value="Register"><i class="icon-hand-right"></i>
                         </div>
                     </div>
@@ -46,4 +46,32 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
+
+
+  
+@model BikeStore.WebUI.Models.RegisterViewModel
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <form asp-action="Register" asp-controller="Account" method="post">
+        <div asp-validation-summary="All"></div>
+        <label>Email</label>
+        <input type="text" asp-for="@Model.Email" /><br />
+        <label>Password</label>
+        <input type="password" asp-for="@Model.Password" /><br />
+        <input type="submit" value="Save" />
+    </form>
+
+</body>
+</html>

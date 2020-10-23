@@ -17,6 +17,6 @@ namespace BikeStore.Entities.Concrete
         public string product_name { get; set; }
         public short model_year { get; set; }
         public decimal list_price { get; set; }
-        public int product_photo_id { get; set; }
+        public int? product_photo_id { get; set; }
     }
 }

@@ -14,7 +14,8 @@ namespace BikeStore.WebUI.Controllers
 
 
     //Identity bu sınıf giriş yapılmadan kullanılamaz
-    //[Authorize]
+
+   
     public class ProductController : Controller
     {
 
@@ -75,6 +76,8 @@ namespace BikeStore.WebUI.Controllers
         }
 
 
+        [Authorize]
+       
         public IActionResult GetAllProductView()
         {
             return View();
@@ -106,15 +109,9 @@ namespace BikeStore.WebUI.Controllers
         }
 
 
-        public IActionResult Detail(int id)
+        public IActionResult Detail(int productId)
         {
-
-
-           // Product model = _productService.GetById(id);
-
-
-        
-
+            Product model = _productService.GetById(productId);
             return View();
         }
 

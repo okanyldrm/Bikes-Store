@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BikeStore.WebUI.Entities;
+using BikeStore.WebUI.AuthIdentity;
 using BikeStore.WebUI.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,98 +11,86 @@ namespace BikeStore.WebUI.Controllers
 {
     public class AccountController : Controller
     {
-        private UserManager<CustomIdentityUser> _userManager;
-        private RoleManager<CustomIdentityRole> _roleManager;
-        private SignInManager<CustomIdentityUser> _signInManager;
+        private readonly UserManager<AppIdentityUser> _userManager;
+        private readonly SignInManager<AppIdentityUser> _signInManager;
 
-        public AccountController(UserManager<CustomIdentityUser> userManager, RoleManager<CustomIdentityRole> roleManager, SignInManager<CustomIdentityUser> signInManager)
+        public AccountController(UserManager<AppIdentityUser> userManager, SignInManager<AppIdentityUser> signInManager)
         {
             _userManager = userManager;
-            _roleManager = roleManager;
             _signInManager = signInManager;
         }
 
-        public ActionResult Register()
+        [Route("administrator/register")]
+        public IActionResult Register()
         {
-            return View();
+            var model = new RegisterViewModel
+            {
+
+            };
+            return View(model);
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Register(RegisterViewModel registerViewModel)
+        [Route("administrator/register")]
+        public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            if (ModelState.IsValid)
+            var user = new AppIdentityUser
             {
-                CustomIdentityUser user = new CustomIdentityUser
-                {
-                    UserName = registerViewModel.UserName,
-                    Email = registerViewModel.Email
-                };
+                UserName = model.Email,
+                Email = model.Email,
+            };
 
-                IdentityResult result =
-                    _userManager.CreateAsync(user, registerViewModel.Password).Result;
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if (!result.Succeeded)
+            {
+                foreach (var validateItem in result.Errors)
+                    ModelState.AddModelError("", validateItem.Description);
 
-                if (result.Succeeded)
-                {
-                    if (!_roleManager.RoleExistsAsync("Admin").Result)
-                    {
-                        CustomIdentityRole role = new CustomIdentityRole
-                        {
-                            Name = "Admin"
-                        };
-
-                        IdentityResult roleResult = _roleManager.CreateAsync(role).Result;
-
-                        if (!roleResult.Succeeded)
-                        {
-                            ModelState.AddModelError("", "We can't add the role!");
-                            return View(registerViewModel);
-                        }
-                    }
-
-                    _userManager.AddToRoleAsync(user, "Admin").Wait();
-                    return RedirectToAction("Login", "Account");
-                }
+                return View(model);
             }
 
-            return View(registerViewModel);
+            return Redirect("~/");
         }
 
-        public ActionResult Login()
+
+
+
+        [Route("administrator/login")]
+        public IActionResult Login()
         {
-            return View();
+            var model = new LoginViewModel
+            {
+
+            };
+            return View(model);
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Login(LoginViewModel loginViewModel)
+        [Route("administrator/login")]
+        public async Task<IActionResult> Login(LoginViewModel model)
         {
-            if (ModelState.IsValid)
+            var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, true);
+            if (result.Succeeded)
             {
-                var result = _signInManager.PasswordSignInAsync(loginViewModel.UserName,
-                    loginViewModel.Password, loginViewModel.RememberMe, false).Result;
-
-                if (result.Succeeded)
-                {
-                    return RedirectToAction("GetAllProductView", "Product");
-                }
-
-                ModelState.AddModelError("", "Invalid login!");
+                //return Redirect("~/");
+                return Redirect("~/Product/GetAllProductView");
             }
 
-            return View(loginViewModel);
+            return View(model);
         }
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        public ActionResult LogOff()
+        [Route("administrator/log-out")]
+        public async Task<IActionResult> LogOut()
         {
-            _signInManager.SignOutAsync().Wait();
-            return RedirectToAction("Login");
+            await _signInManager.SignOutAsync();
+            return Redirect("~/administrator/login");
         }
 
-
-
+        [Route("administrator/access-denied")]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
 
     }
 }

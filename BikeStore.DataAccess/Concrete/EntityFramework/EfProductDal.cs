@@ -36,8 +36,6 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
                          join ph in context.Photos on p.product_photo_id equals ph.Id into phx from ph in phx.DefaultIfEmpty()
 
 
-
-
                          select new ProductDetail
                          {
                              ProductId = p.product_id,

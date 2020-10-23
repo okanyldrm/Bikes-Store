@@ -155,3 +155,5 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Release\netcoreapp3.1
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Release\netcoreapp3.1\BikeStore.WebAPI.dll
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Release\netcoreapp3.1\BikeStore.WebAPI.pdb
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Release\netcoreapp3.1\BikeStore.WebAPI.genruntimeconfig.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Release\netcoreapp3.1\CloudinaryDotNet.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

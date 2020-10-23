@@ -6,3 +6,4 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Release\netcoreapp3.1\B
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Release\netcoreapp3.1\BikeStore.Core.csproj.CoreCompileInputs.cache
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Release\netcoreapp3.1\BikeStore.Core.dll
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Release\netcoreapp3.1\BikeStore.Core.pdb
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Release\netcoreapp3.1\BikeStore.Core.csprojAssemblyReference.cache

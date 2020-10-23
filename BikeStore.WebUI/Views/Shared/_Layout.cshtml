@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -17,7 +19,7 @@
     @* Other *@
     <link rel="stylesheet" href="~/css/template/templatemo-sixteen.css">
     <link rel="stylesheet" href="~/css/template/owl.css">
-    
+
 
 
 
@@ -42,7 +44,7 @@
     <script src="~/js/Scripts/HomeJs/Home.js"></script>
     <script src="~/lib/fontawesome-free-5.14.0-web/js/fontawesome.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/popper.js"></script>
-  
+
 
     <!-- Additional Scripts template -->
     <script src="~/js/Scripts/template/custom.js"></script>
@@ -50,10 +52,63 @@
     <script src="~/js/Scripts/template/slick.js"></script>
     <script src="~/js/Scripts/template/isotope.js"></script>
     <script src="~/js/Scripts/template/accordions.js"></script>
+    
+    @* nav scripts *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/Scripts/ProductJs/Products.js"></script>
+
 
 
 </head>
 <body>
+
+    <div class="row">
+        <header class="">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                        <h2>Bike <em>Stores</em></h2>
+                    </a>
+                    <img id="logo" src="~/images/baby-bike.png" alt="Alternate Text" />
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">
+                                    Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" asp-controller="Product" asp-action="GetAllProductView">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="About" asp-action="Index">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+
+
+                        </ul>
+                        
+                        @*&ensp
+                        <a asp-controller="Account" asp-action="Login"><button class="btn btn-success">Login</button></a>
+                        
+                        &nbsp&nbsp&nbsp
+                        <a asp-controller="Account" asp-action="LogOff"><button class="btn btn-danger">Logout</button></a>*@
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
 
 
     @RenderBody()

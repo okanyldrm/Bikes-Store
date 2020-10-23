@@ -87,5 +87,14 @@ namespace BikeStore.WebAPI.Controllers
             return Json(message);
         }
 
+
+        [HttpGet("getmaxproduct")]
+        public IActionResult GetMaxPrice()
+        {
+            List<Product> prs = _productService.MaxPriceProduct();
+            return Json(prs);
+        }
+
+
     }
 }

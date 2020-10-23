@@ -6,7 +6,7 @@ using System.Text;
 
 namespace BikeStore.Core.DataAccess
 {
-    public interface IRepository<T> where T:class , IEntity, new ()
+    public interface IRepository<T> where T : class , IEntity, new ()
     {
 
 
