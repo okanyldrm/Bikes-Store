@@ -8,6 +8,7 @@ using BikeStore.DataAccess.Abstract;
 using BikeStore.DataAccess.Concrete.EntityFramework;
 using BikeStore.WebUI.AuthIdentity;
 using BikeStore.WebUI.Entities;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -69,6 +70,23 @@ namespace BikeStore.WebUI
 
             //identitiy finish
 
+            services.AddAuthentication(options =>
+                {
+                    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                })
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "account/google-login";
+                })
+                .AddGoogle(options =>
+                {
+                   
+
+                    options.ClientId = "761113825363-t0omb1gv8r67il9irtu1nl3m6o7eq732.apps.googleusercontent.com";
+                    options.ClientSecret = "PjcEc-mK6IVt2AKgBclqOAWq";
+                });
+
+
 
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddControllersWithViews();
@@ -105,6 +123,8 @@ namespace BikeStore.WebUI
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+
+
 
             app.UseEndpoints(endpoints =>
             {

@@ -5,9 +5,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#563d7c">
     <title>@ViewData["Title"] - BikeStore</title>
 
-
+    @*********************************************DESİGN*******************************************************@
 
 
     <!-- Bootstrap core CSS -->
@@ -20,7 +21,36 @@
     <link rel="stylesheet" href="~/css/template/templatemo-sixteen.css">
     <link rel="stylesheet" href="~/css/template/owl.css">
 
+    @*Login Css Import*@
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/ExtendsPage/login/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/login/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/login/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/login/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/login/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/login/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/login/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/login/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/login/css/main.css">
+    <!--===============================================================================================-->
+    @*Left menu Css*@
 
+    <link rel="stylesheet" type="text/css" href="~/ExtendsPage/leftmenu/leftmenu.css">
+    
+    @*NAV CSS*@
+    <link rel="stylesheet" type="text/scss" href="~/css/navbar/navstyle.scss">
+    
 
 
     <!-- Favicons -->
@@ -31,8 +61,10 @@
         <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
         <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">*@
     @*<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">*@
-    <meta name="theme-color" content="#563d7c">
 
+
+
+    @*********************************************SCRİPTS*******************************************************@
 
     @*<script src="lib/jquery/dist/jquery.min.js"></script>
         <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -52,11 +84,33 @@
     <script src="~/js/Scripts/template/slick.js"></script>
     <script src="~/js/Scripts/template/isotope.js"></script>
     <script src="~/js/Scripts/template/accordions.js"></script>
-    
+
     @* nav scripts *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/Scripts/ProductJs/Products.js"></script>
 
+    @*LOgin Scripts*@
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="~/ExtendsPage/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/ExtendsPage/login/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/ExtendsPage/login/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/ExtendsPage/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/ExtendsPage/login/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/ExtendsPage/login/vendor/daterangepicker/moment.min.js"></script>
+    <script src="~/ExtendsPage/login/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/ExtendsPage/login/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/ExtendsPage/login/js/main.js"></script>
+    
+    @*NavBar Scripts*@
+    <script src="~/js/Scripts/nav.js"></script>
 
 
 </head>
@@ -76,7 +130,7 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Home" asp-action="Index">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index" id="home-btn">
                                     Home
                                     <span class="sr-only">(current)</span>
                                 </a>
@@ -93,22 +147,42 @@
 
 
                         </ul>
-                        
+
                         @*&ensp
-                        <a asp-controller="Account" asp-action="Login"><button class="btn btn-success">Login</button></a>
-                        
-                        &nbsp&nbsp&nbsp
-                        <a asp-controller="Account" asp-action="LogOff"><button class="btn btn-danger">Logout</button></a>*@
+                    <a asp-controller="Account" asp-action="Login"><button class="btn btn-success">Login</button></a>*@
+                        @*&nbsp&nbsp&nbsp
+                    <a asp-controller="Account" asp-action="LogOut"><button class="btn btn-danger">Logout</button></a>*@
+
+                        &nbsp  &nbsp  &nbsp
+                        <a asp-controller="Account" asp-action="Login">
+                            <button class="login100-form-btn" type="submit">
+                                Login
+                            </button>
+                        </a>
+                        &nbsp
+                        <a asp-controller="Account" asp-action="LogOut">
+                            <button class="login100-form-btn" type="submit">
+                                Log-Off
+                            </button>
+                        </a>
+
+
+
 
                     </div>
+
                 </div>
             </nav>
+          
+            
+         
+            
         </header>
     </div>
     <br />
     <br />
     <br />
-    <br />
+<br />
 
 
     @RenderBody()

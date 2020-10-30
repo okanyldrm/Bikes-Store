@@ -65,7 +65,6 @@ namespace BikeStore.WebAPI.Controllers
         public void UpdateCategory([FromBody] Category category)
         {
             _categoryService.Update(category);
-
         }
 
 

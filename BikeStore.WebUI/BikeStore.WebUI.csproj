@@ -1,15 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>c0d871a1-c9e3-4a18-a287-27f2aa869740</UserSecretsId>
   </PropertyGroup>
-
   <ItemGroup>
     <None Include="wwwroot\js\Scripts\ProductJs\Products.js" />
   </ItemGroup>
-
   <ItemGroup>
+    <PackageReference Include="BuildWebCompiler" Version="1.12.405" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
@@ -19,14 +20,11 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\BikeStore.Business\BikeStore.Business.csproj" />
     <ProjectReference Include="..\BikeStore.DataAccess\BikeStore.DataAccess.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="wwwroot\js\Scripts\NewFolder\" />
   </ItemGroup>
-
 </Project>

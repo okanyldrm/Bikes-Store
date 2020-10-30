@@ -440,6 +440,7 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\Bi
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\About\Index.cshtml.g.cs
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Product\Detail.cshtml.g.cs
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\BikeStore.WebUI.csproj.CoreCompileInputs.cache
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\BikeStore.WebUI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebUI\obj\Debug\netcoreapp3.1\BikeStore.WebUI.MvcApplicationPartsAssemblyInfo.cache

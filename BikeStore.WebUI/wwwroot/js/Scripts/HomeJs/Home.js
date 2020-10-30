@@ -29,8 +29,9 @@ $(document).ready(function() {
 
     $("#video").css({ "height": "400px", "width": "500px" });
 
-
-   
+    $("#home-btn").click(function() {
+        $(this).css("active");
+    });
 
 
 });

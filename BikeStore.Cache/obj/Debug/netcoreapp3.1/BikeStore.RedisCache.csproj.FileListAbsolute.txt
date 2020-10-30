@@ -1,0 +1,9 @@
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Cache\bin\Debug\netcoreapp3.1\BikeStore.RedisCache.deps.json
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Cache\bin\Debug\netcoreapp3.1\BikeStore.RedisCache.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Cache\obj\Debug\netcoreapp3.1\BikeStore.RedisCache.csprojAssemblyReference.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Cache\obj\Debug\netcoreapp3.1\BikeStore.RedisCache.AssemblyInfoInputs.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Cache\obj\Debug\netcoreapp3.1\BikeStore.RedisCache.AssemblyInfo.cs
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Cache\bin\Debug\netcoreapp3.1\BikeStore.RedisCache.pdb
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Cache\obj\Debug\netcoreapp3.1\BikeStore.RedisCache.csproj.CoreCompileInputs.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Cache\obj\Debug\netcoreapp3.1\BikeStore.RedisCache.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.Cache\obj\Debug\netcoreapp3.1\BikeStore.RedisCache.pdb

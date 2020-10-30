@@ -158,3 +158,10 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\C
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Debug\netcoreapp3.1\BikeStore.WebAPI.csproj.CoreCompileInputs.cache
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Debug\netcoreapp3.1\BikeStore.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\obj\Debug\netcoreapp3.1\BikeStore.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\BikeStore.RedisCache.dll
+C:\Users\OkanY\source\repos\BikeStore\BikeStore.WebAPI\bin\Debug\netcoreapp3.1\BikeStore.RedisCache.pdb

@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using BikeStore.Business.Abstract;
 using BikeStore.Entities.ComplexType;
 using BikeStore.Entities.Concrete;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -14,21 +17,26 @@ namespace BikeStore.WebUI.Controllers
 
 
     //Identity bu sınıf giriş yapılmadan kullanılamaz
-
+    //[Authorize]
    
     public class ProductController : Controller
     {
 
 
         private IProductService _productService;
+        private readonly IHostingEnvironment _environment;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, IHostingEnvironment environment)
         {
             _productService = productService;
+            _environment = environment;
         }
+        
+
+       
 
 
-     
+
         public IActionResult GetAll()
         {
 
@@ -111,14 +119,20 @@ namespace BikeStore.WebUI.Controllers
 
         public IActionResult Detail(int productId)
         {
-            Product model = _productService.GetById(productId);
-            return View();
+            //Product model = _productService.GetById(productId);
+            ProductDetail model = _productService.GetProductDetailsById(productId);
+            return View(model);
         }
 
+        //image upload
+
+        
+        
 
 
 
-    }
+
+        }
 
   
 }

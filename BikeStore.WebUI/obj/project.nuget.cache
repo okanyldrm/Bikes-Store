@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Rhsem6TzbZEIlS7uPs7xn+wSd0R6O2tzap4RMvrz9retz4zoz48MoBJelgRLN5u2feeyG0KC0XN2DKCjD4liyQ==",
+  "dgSpecHash": "PkS/yvnOm98jRVrUV1jZPhtRSykcdMOW6t9NA6lw8wemSgl8uITplSpnqj9zc8uzz2N2sQF97QrhdS2Bv/7ITQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.WebUI\\BikeStore.WebUI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\OkanY\\.nuget\\packages\\buildwebcompiler\\1.12.405\\buildwebcompiler.1.12.405.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.1.9\\microsoft.aspnetcore.authentication.google.3.1.9.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.8\\microsoft.aspnetcore.cryptography.internal.3.1.8.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.8\\microsoft.aspnetcore.cryptography.keyderivation.3.1.8.nupkg.sha512",
     "C:\\Users\\OkanY\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",

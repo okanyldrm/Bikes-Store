@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BikeStore.Business\BikeStore.Business.csproj" />
+    <ProjectReference Include="..\BikeStore.Cache\BikeStore.RedisCache.csproj" />
   </ItemGroup>
 
 
