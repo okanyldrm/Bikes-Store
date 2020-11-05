@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using BikeStore.Business.Abstract;
 using BikeStore.Entities.ComplexType;
 using BikeStore.Entities.Concrete;
+using BikeStore.RedisCache;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +20,8 @@ namespace BikeStore.WebAPI.Controllers
     public class ProductController : Controller
     {
         private IProductService _productService;
+
+       
         public ProductController(IProductService productService)
         {
             _productService = productService;
@@ -30,8 +33,11 @@ namespace BikeStore.WebAPI.Controllers
         [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
+           
 
             var Products = _productService.GetAll();
+
+           
             ProductViewListModel model = new ProductViewListModel()
             {
                 Products = Products
@@ -43,7 +49,10 @@ namespace BikeStore.WebAPI.Controllers
         [HttpGet("getbyid/{id}")]
         public IActionResult GetById(int id)
         {
+            var redisManager = new RedisCacheManager();
+
             var Product = _productService.GetById(id);
+            redisManager.Set(Product.product_name.ToString(),Product,60);
 
             return Json(Product);
         }

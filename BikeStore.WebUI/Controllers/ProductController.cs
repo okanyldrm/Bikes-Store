@@ -24,18 +24,27 @@ namespace BikeStore.WebUI.Controllers
 
 
         private IProductService _productService;
+        private IBrandService _brandService;
         private readonly IHostingEnvironment _environment;
 
-        public ProductController(IProductService productService, IHostingEnvironment environment)
+        public ProductController(IProductService productService, IHostingEnvironment environment, IBrandService brandService)
         {
             _productService = productService;
             _environment = environment;
+            _brandService = brandService;
         }
-        
 
-       
+        public IActionResult Index()
+        {
+            return View();
+        }
 
 
+
+        public IActionResult GetAllProductView()
+        {
+            return View();
+        }
 
         public IActionResult GetAll()
         {
@@ -84,13 +93,8 @@ namespace BikeStore.WebUI.Controllers
         }
 
 
-        [Authorize]
-       
-        public IActionResult GetAllProductView()
-        {
-            return View();
-        }
-
+        
+     
 
         public IActionResult GetProductDetail()
         {
@@ -124,15 +128,23 @@ namespace BikeStore.WebUI.Controllers
             return View(model);
         }
 
-        //image upload
-
-        
-        
+        //new Template istekler
 
 
+        public IActionResult CategoriesView()
+        {
+
+            List<Brand> Brands = _brandService.GetAll();
 
 
+
+            return View(Brands);
         }
+
+
+
+
+    }
 
   
 }

@@ -94,6 +94,8 @@ namespace BikeStore.WebUI
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryDal, EfCategoryDal>();
+            services.AddScoped<IBrandService, BrandManager>();
+            services.AddScoped<IBrandDal, EfBrandDal>();
 
 
 

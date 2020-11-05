@@ -14417,6 +14417,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.WebUI\\Views\\Product\\CategoriesView.cshtml",
+      "TargetPath": "Views\\Product\\CategoriesView.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.WebUI\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -14429,6 +14434,11 @@
     {
       "FilePath": "c:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.WebUI\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.WebUI\\Views\\Product\\Index.cshtml",
+      "TargetPath": "Views\\Product\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
