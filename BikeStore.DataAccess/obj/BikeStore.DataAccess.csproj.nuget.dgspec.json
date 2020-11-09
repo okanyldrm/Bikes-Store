@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {}
+    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj": {
+    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj",
+        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj",
         "projectName": "BikeStore.Core",
-        "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj",
-        "packagesPath": "C:\\Users\\OkanY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\obj\\",
+        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj",
+        "packagesPath": "C:\\Users\\okany\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\OkanY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\okany\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {
+    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
         "projectName": "BikeStore.DataAccess",
-        "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\OkanY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\okany\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\OkanY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\okany\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,11 +85,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj": {
-                "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj"
+              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj": {
+                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj"
               },
-              "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj": {
-                "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj"
+              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj": {
+                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj"
               }
             }
           }
@@ -131,21 +131,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj": {
+    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj",
         "projectName": "BikeStore.Entities",
-        "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\BikeStore.Entities.csproj",
-        "packagesPath": "C:\\Users\\OkanY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Entities\\obj\\",
+        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj",
+        "packagesPath": "C:\\Users\\okany\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\OkanY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\okany\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,8 +158,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj": {
-                "projectPath": "C:\\Users\\OkanY\\source\\repos\\BikeStore\\BikeStore.Core\\BikeStore.Core.csproj"
+              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj": {
+                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj"
               }
             }
           }
@@ -187,7 +187,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
