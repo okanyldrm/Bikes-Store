@@ -12,3 +12,17 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.DataAccess\obj\Debug\netcoreapp3
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.DataAccess\obj\Debug\netcoreapp3.1\BikeStore.DataAccess.csproj.CopyComplete
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.DataAccess\obj\Debug\netcoreapp3.1\BikeStore.DataAccess.dll
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.DataAccess\obj\Debug\netcoreapp3.1\BikeStore.DataAccess.pdb
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\bin\Debug\netcoreapp3.1\BikeStore.DataAccess.deps.json
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\bin\Debug\netcoreapp3.1\BikeStore.DataAccess.dll
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\bin\Debug\netcoreapp3.1\BikeStore.DataAccess.pdb
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\bin\Debug\netcoreapp3.1\BikeStore.Core.dll
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\bin\Debug\netcoreapp3.1\BikeStore.Entities.dll
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\bin\Debug\netcoreapp3.1\BikeStore.Core.pdb
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\bin\Debug\netcoreapp3.1\BikeStore.Entities.pdb
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\obj\Debug\netcoreapp3.1\BikeStore.DataAccess.csprojAssemblyReference.cache
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\obj\Debug\netcoreapp3.1\BikeStore.DataAccess.AssemblyInfoInputs.cache
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\obj\Debug\netcoreapp3.1\BikeStore.DataAccess.AssemblyInfo.cs
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\obj\Debug\netcoreapp3.1\BikeStore.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\obj\Debug\netcoreapp3.1\BikeStore.DataAccess.csproj.CopyComplete
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\obj\Debug\netcoreapp3.1\BikeStore.DataAccess.dll
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.DataAccess\obj\Debug\netcoreapp3.1\BikeStore.DataAccess.pdb

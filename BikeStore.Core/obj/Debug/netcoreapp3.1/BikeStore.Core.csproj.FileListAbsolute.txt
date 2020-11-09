@@ -7,3 +7,12 @@ C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Debug\netcoreapp3.1\Bik
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Debug\netcoreapp3.1\BikeStore.Core.pdb
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Debug\netcoreapp3.1\BikeStore.Core.csproj.CoreCompileInputs.cache
 C:\Users\OkanY\source\repos\BikeStore\BikeStore.Core\obj\Debug\netcoreapp3.1\BikeStore.Core.csprojAssemblyReference.cache
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.Core\bin\Debug\netcoreapp3.1\BikeStore.Core.deps.json
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.Core\bin\Debug\netcoreapp3.1\BikeStore.Core.dll
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.Core\bin\Debug\netcoreapp3.1\BikeStore.Core.pdb
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.Core\obj\Debug\netcoreapp3.1\BikeStore.Core.csprojAssemblyReference.cache
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.Core\obj\Debug\netcoreapp3.1\BikeStore.Core.AssemblyInfoInputs.cache
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.Core\obj\Debug\netcoreapp3.1\BikeStore.Core.AssemblyInfo.cs
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.Core\obj\Debug\netcoreapp3.1\BikeStore.Core.csproj.CoreCompileInputs.cache
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.Core\obj\Debug\netcoreapp3.1\BikeStore.Core.dll
+C:\Users\okany\Source\Repos\okanyldrm\BikesStore\BikeStore.Core\obj\Debug\netcoreapp3.1\BikeStore.Core.pdb

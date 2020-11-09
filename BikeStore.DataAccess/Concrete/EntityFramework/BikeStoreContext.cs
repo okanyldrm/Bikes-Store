@@ -12,7 +12,7 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
         //Connection-String
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb; Database=BikeStores; Trusted_Connection=True");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-SAM0GTS\LOCAL2; Database=BikeStores; Trusted_Connection=True");
         }
 
 
