@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using MySqlConnector;
 
 namespace BikeStore.DataAccess.Concrete.EntityFramework
 {
@@ -13,6 +14,7 @@ namespace BikeStore.DataAccess.Concrete.EntityFramework
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-SAM0GTS\LOCAL2; Database=BikeStores; Trusted_Connection=True");
+            
         }
 
 

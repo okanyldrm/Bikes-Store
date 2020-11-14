@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BikeStore.Business",
+    "\\BikeStore.Business\\obj"
   ],
+  "SelectedNode": "\\BikeStore.Business\\BikeStore.Business.csproj",
   "PreviewInSolutionExplorer": false
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0ZWybE4QocAyyCKZgwe4P0CuBl0V1BkuSzaHvG3r/A3GnCqXEEou1eSWQbqrcaUtPhufh9Uz8zTzK3n/cFYWeQ==",
+  "dgSpecHash": "ItILhaJWtn2iFEY2jyWZ6OgNhQka6dBqPA2dixyk2xA9e1z7cKxJjN6uUYK81ZgVtauE0UsFwUkCkFNpkQeUOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Cache\\BikeStore.RedisCache.csproj",
+  "projectFilePath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Cache\\BikeStore.RedisCache.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.9\\microsoft.extensions.caching.abstractions.3.1.9.nupkg.sha512",

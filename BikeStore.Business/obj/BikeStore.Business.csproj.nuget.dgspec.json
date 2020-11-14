@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Business\\BikeStore.Business.csproj": {}
+    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Business\\BikeStore.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Business\\BikeStore.Business.csproj": {
+    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Business\\BikeStore.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Business\\BikeStore.Business.csproj",
+        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Business\\BikeStore.Business.csproj",
         "projectName": "BikeStore.Business",
-        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Business\\BikeStore.Business.csproj",
+        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Business\\BikeStore.Business.csproj",
         "packagesPath": "C:\\Users\\okany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Business\\obj\\",
+        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\okany\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,12 +26,13 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj"
+              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj"
               },
-              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj": {
-                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj"
+              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Entities\\BikeStore.Entities.csproj": {
+                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Entities\\BikeStore.Entities.csproj"
               }
             }
           }
@@ -44,6 +45,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -59,18 +61,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj": {
+    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Core\\BikeStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj",
+        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Core\\BikeStore.Core.csproj",
         "projectName": "BikeStore.Core",
-        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj",
+        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Core\\BikeStore.Core.csproj",
         "packagesPath": "C:\\Users\\okany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\obj\\",
+        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\okany\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,6 +87,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -96,6 +99,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -117,18 +121,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {
+    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
         "projectName": "BikeStore.DataAccess",
-        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
+        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.DataAccess\\BikeStore.DataAccess.csproj",
         "packagesPath": "C:\\Users\\okany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\okany\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -143,12 +147,13 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj": {
-                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj"
+              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Core\\BikeStore.Core.csproj": {
+                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Core\\BikeStore.Core.csproj"
               },
-              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj": {
-                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj"
+              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Entities\\BikeStore.Entities.csproj": {
+                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Entities\\BikeStore.Entities.csproj"
               }
             }
           }
@@ -161,6 +166,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -169,6 +175,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.7, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             },
             "VisioForge.DotNet.Core.TRIAL": {
               "target": "Package",
@@ -190,18 +200,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj": {
+    "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Entities\\BikeStore.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Entities\\BikeStore.Entities.csproj",
         "projectName": "BikeStore.Entities",
-        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj",
+        "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Entities\\BikeStore.Entities.csproj",
         "packagesPath": "C:\\Users\\okany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\obj\\",
+        "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\okany\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -216,9 +226,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj": {
-                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Core\\BikeStore.Core.csproj"
+              "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Core\\BikeStore.Core.csproj": {
+                "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Core\\BikeStore.Core.csproj"
               }
             }
           }
@@ -231,6 +242,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -246,7 +258,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

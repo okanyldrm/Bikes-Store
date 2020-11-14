@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6pUDP/Z/vvOXQYCSfYWAS3IBlzc9SReRWkZxl8xPumf0Oq7VhGpwYWhPQ/tcqSVTclIinAShY86xnDM7UUx6Cw==",
+  "dgSpecHash": "CzSP1UhXiuwxMNsBpKePeqouJwojZiA9MXxT7J92nqxA5JCWpxT8HkbW6n9F4kNULbNreoo2I3T76t3kWmptJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Entities\\BikeStore.Entities.csproj",
+  "projectFilePath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Entities\\BikeStore.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

@@ -34,6 +34,9 @@ namespace BikeStore.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
 
+            //db
+           
+
             //new identity
 
             services.AddDbContext<IdentityContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConStr")));

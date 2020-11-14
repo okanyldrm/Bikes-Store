@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9PfqzoC2BtT/pyJQf6uQkGtW/XL2PiRQ45zD+ftAq8xIvdm2P/lLAN4HlGPn/aPbXjDIVW77FvWFZboSbCgjhw==",
+  "dgSpecHash": "ryxQtRI6bSzVeDyL+HiMFxlOQHptVZM5F9YnIxwQf8GX2kmXse4blOOJ6YYhblS0UeUmvuy5pF7bAzt8qXyAlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Business\\BikeStore.Business.csproj",
+  "projectFilePath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.Business\\BikeStore.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
@@ -33,6 +33,7 @@
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\okany\\.nuget\\packages\\mysqlconnector\\1.1.0\\mysqlconnector.1.1.0.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

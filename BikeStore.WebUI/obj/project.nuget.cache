@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7Oh0IsIUl83f/ii+DZFxTZu6rngZhR4zUhxCtRyUxEdZNMzRguGqWBAdbwhzo9hplnCAu/jTt5eR61q5p8LEBw==",
+  "dgSpecHash": "WJX2wAcfVGlYc0tDUwEzl9M78bKbzhpaow1keGeRDNQAm2pLc3Y8m0KrXK+yXHXeunlLODqkFMuv1xAUQ1uVPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.WebUI\\BikeStore.WebUI.csproj",
+  "projectFilePath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\Bikes-Store\\BikeStore.WebUI\\BikeStore.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\okany\\.nuget\\packages\\buildwebcompiler\\1.12.405\\buildwebcompiler.1.12.405.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
@@ -82,6 +82,7 @@
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\3.1.4\\microsoft.visualstudio.web.codegenerators.mvc.3.1.4.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\okany\\.nuget\\packages\\mysqlconnector\\1.1.0\\mysqlconnector.1.1.0.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\okany\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",

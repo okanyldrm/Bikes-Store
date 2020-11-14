@@ -3975,11 +3975,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Cache\\BikeStore.RedisCache.csproj",
+      "projectUniqueName": "C:\\Users\\okany\\source\\repos\\okanyldrm\\Bikes-Store\\BikeStore.Cache\\BikeStore.RedisCache.csproj",
       "projectName": "BikeStore.RedisCache",
-      "projectPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Cache\\BikeStore.RedisCache.csproj",
+      "projectPath": "C:\\Users\\okany\\source\\repos\\okanyldrm\\Bikes-Store\\BikeStore.Cache\\BikeStore.RedisCache.csproj",
       "packagesPath": "C:\\Users\\okany\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\okany\\Source\\Repos\\okanyldrm\\BikesStore\\BikeStore.Cache\\obj\\",
+      "outputPath": "C:\\Users\\okany\\source\\repos\\okanyldrm\\Bikes-Store\\BikeStore.Cache\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\okany\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3994,6 +3994,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -4005,6 +4006,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.Extensions.Caching.StackExchangeRedis": {
             "target": "Package",
@@ -4030,7 +4032,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
