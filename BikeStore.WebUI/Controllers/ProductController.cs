@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BikeStore.Business.Abstract;
 using BikeStore.Entities.ComplexType;
 using BikeStore.Entities.Concrete;
+using BikeStore.WebUI.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -134,11 +135,16 @@ namespace BikeStore.WebUI.Controllers
         public IActionResult CategoriesView()
         {
 
-            List<Brand> Brands = _brandService.GetAll();
+            List<Brand> brands = _brandService.GetAll();
+
+            var model = new CategoriesViewModel
+            {
+                Brands = brands
+            };
 
 
 
-            return View(Brands);
+            return View(model);
         }
 
 

@@ -1,4 +1,5 @@
 ﻿
+@model BikeStore.WebUI.Models.CategoriesViewModel
 @{
     Layout = null;
 }
@@ -136,84 +137,24 @@
                                 <h5>Brands</h5>
                                 <div class="list-b">
                                     <div id="boxscroll">
-                                        <div class="form-check">
-                                            <input id="checkbox1" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox1">
-                                                Adana Cimento
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox2" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox2">
-                                                Akbank
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox3" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox3">
-                                                Alvimedica
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox4" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox4">
-                                                Arcelik
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox5" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox5">
-                                                Askam
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox6" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox6">
-                                                Salcano
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox7" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox7">
-                                                Sedona
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox8" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox8">
-                                                Sisecam
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox9" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox9">
-                                                Su Marine Yachts
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox10" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox10">
-                                                Beko
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox11" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox11">
-                                                Kale Celik Esya
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox12" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox12">
-                                                Default
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="checkbox13" class="filled-in chk-col-blue" type="checkbox">
-                                            <label for="checkbox13">
-                                                Default
-                                            </label>
-                                        </div>
+
+                                        @foreach (var item in Model.Brands)
+                                        {
+
+                                            <div class="form-check">
+                                                <input id="checkbox1" class="filled-in chk-col-blue" type="checkbox">
+                                                <label for="checkbox1">
+                                                    @item.brand_name
+                                                </label>
+                                            </div>
+
+                                        }
+
+
+
+
+
+
                                     </div>
                                 </div>
                             </div>
